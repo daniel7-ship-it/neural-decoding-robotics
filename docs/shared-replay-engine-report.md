@@ -1,0 +1,9 @@
+# Shared replay engine — 2026-10-28
+
+The dashboard and regression tests now use `src/neuralduck/replay_engine.py`. Integer50Hz ticks schedule exactly one new electrode window per five ticks, in index order. Each decoded command is available at the decision tick and applies from the next20ms physics interval. The previous command drives the decision interval. The engine stops after the final decision has had an application interval, clears its command, and reports completion. The dashboard then resets robot and replay to the selected starting point; it cannot keep classifying the last window indefinitely.
+
+`tests/test_replay_engine.py` runs the actual engine through full session45 clean recordings using the means-only checkpoint, comparing every predicted class and gated command against the saved diagnostic trace. It checks exact index order, next-interval command timing metadata, initial zero application, terminal zero application, completion idempotence, state reset and a seek beginning on the last window. Both tests passed. This fixture exercises the dashboard's shared engine rather than a separate batch gate implementation. It checks decoder/command parity, not equivalent robot trajectories in the offline experiment, which contains no robot.
+
+The updated dashboard rendered successfully in an accelerated smoke run. Native UI was inspected, Broad-noise48 was clicked, and the replay time and counters visibly restarted with the new checkpoint. Robot resetting remains the previously verified zero-state/initial-pose path. Replay remains open on Broad-noise48 / Clean. No model training was performed.
+
+Run with PYTHONPATH=src: `.venv\Scripts\python.exe -m unittest discover -s tests -p test_replay_engine.py -v`. Evidence: artifacts/replay-engine-tests.txt and replay-engine-ui.log. Open via Open-Neural-Network-Duck.cmd.

@@ -1,0 +1,35 @@
+{
+  "physics": "BAM M6 XL330 at 7.4V, 0.1 load sag; 5ms physics x4 = 50Hz policy",
+  "policy_input_dim": 61,
+  "sim_seconds": 10.0,
+  "command_events": [
+    {
+      "start": 0.0,
+      "decoded": "left",
+      "truth_for_eval_only": "left",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.0,
+      "decoded": "right",
+      "truth_for_eval_only": "right",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.0,
+      "decoded": "left",
+      "truth_for_eval_only": "left",
+      "confidence": 1.0
+    },
+    {
+      "start": 6.0,
+      "decoded": "right",
+      "truth_for_eval_only": "right",
+      "confidence": 1.0
+    }
+  ],
+  "tracking_yaw_sign_accuracy": 0.9900332225913622,
+  "mean_abs_yaw_rate_active": 1.3509460465733905,
+  "trunk_height_m": 0.11589014697725794,
+  "frame_saved": false
+}

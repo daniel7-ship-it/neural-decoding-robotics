@@ -1,0 +1,69 @@
+{
+  "balanced_accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      48,
+      0,
+      0
+    ],
+    [
+      0,
+      48,
+      0
+    ],
+    [
+      0,
+      0,
+      48
+    ]
+  ],
+  "sessions": {
+    "training": [
+      0,
+      1,
+      2
+    ],
+    "held_out_test": 3
+  },
+  "trials": {
+    "train": 324,
+    "test": 144
+  },
+  "labels": [
+    "rest",
+    "left",
+    "right"
+  ],
+  "per_class_recall": {
+    "rest": 1.0,
+    "left": 1.0,
+    "right": 1.0
+  },
+  "rest_false_commands_per_minute": 0.0,
+  "rest_trials": 48,
+  "coverage": 1.0,
+  "decoder_batch_latency_ms_mean_per_trial": 0.002647222219012393,
+  "shuffled_label_baseline_balanced_accuracy_mean": 0.3642361111111111,
+  "shuffled_label_baseline_balanced_accuracy_sd": 0.20122688646888853,
+  "interpretation": "Simple synthetic rate circuit, not EEG or a model of a whole human brain; easy task by construction.",
+  "observation_window_seconds": 1.0,
+  "rest_metric_definition": "Non-rest predictions per 60 independent one-second rest windows; not continuous-stream false-trigger events.",
+  "left_pool_silencing_balanced_accuracy": 0.6666666666666666,
+  "left_pool_silencing_confusion_matrix": [
+    [
+      48,
+      0,
+      0
+    ],
+    [
+      48,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      48
+    ]
+  ]
+}

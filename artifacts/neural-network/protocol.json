@@ -1,0 +1,62 @@
+{
+  "version": "2026-10-27-first-mlp-pretraining",
+  "anatomy_seed": 42,
+  "splits": {
+    "train": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "validation": [
+      17,
+      18
+    ],
+    "test": [
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "initialization_seeds": [
+    101,
+    202,
+    303
+  ],
+  "schedule": "120s initial uninterrupted rest, then 60 shuffled blocks (20 per class), each 1.5-3.0s; movement strength uniform 0.3-1.0; schedule RNG 900000+session",
+  "sampling_hz": 100,
+  "window_samples": 20,
+  "decision_samples": 10,
+  "architecture": [
+    48,
+    32,
+    3
+  ],
+  "parameters": 1667,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "max_epochs": 100,
+  "patience": 10,
+  "selection": "minimum validation cross entropy; train-only standardization; no test tuning",
+  "gate": "argmax class, two consecutive matching movement predictions, immediate rest, 250ms command expiry; same for all models; no probability threshold tuning",
+  "baselines": [
+    "StandardScaler + shrinkage LDA",
+    "StandardScaler + Ridge(alpha=1), signed-drive thresholds +/-0.18",
+    "untrained MLP seed101",
+    "MLP seed101 trained with block-shuffled labels"
+  ],
+  "criteria": {
+    "balanced_accuracy_min": 0.9,
+    "rest_recall_min": 0.99,
+    "movement_episode_detection_min": 0.9,
+    "long_rest_false_events_per_minute_max": 0.5,
+    "long_rest_occupancy_max": 0.01,
+    "median_detected_onset_delay_seconds_max": 0.5
+  },
+  "metrics": "raw confusion/recall plus gated events and occupancy; false event starts on rest entry or command direction change; movement episode detected only by correct direction; onset includes window/gate delay; misses separate; no transition removal",
+  "scope": "nominal noisy recordings, new sessions of one fixed simulated anatomy; no deliberate disturbance generalization, human EEG, robot integration, or RL in this milestone"
+}

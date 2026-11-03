@@ -1,0 +1,9 @@
+test_development_choice_uses_only_supplied_rows (test_robustness.RobustnessTests.test_development_choice_uses_only_supplied_rows) ... ok
+test_inference_interface_and_adaptation_bound (test_robustness.RobustnessTests.test_inference_interface_and_adaptation_bound) ... ok
+test_paired_recording_changes_do_not_change_neurons (test_robustness.RobustnessTests.test_paired_recording_changes_do_not_change_neurons) ... ok
+test_protocol_split_and_bounded_search (test_robustness.RobustnessTests.test_protocol_split_and_bounded_search) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.879s
+
+OK

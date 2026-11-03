@@ -1,0 +1,1198 @@
+{
+  "protocol": {
+    "target_seconds": 12.0,
+    "rest_seconds": 12.0,
+    "tolerance_rad": 0.2,
+    "settle_seconds": 1.0,
+    "fall_height_m": 0.065,
+    "fall_up_z": 0.45,
+    "ttl_seconds": 0.25,
+    "sensory_deadband_rad": 0.1,
+    "sensory_scale_rad": 0.65,
+    "targets_rad": [
+      1.0,
+      -0.9,
+      0.65
+    ]
+  },
+  "design": {
+    "train_sessions": [
+      0,
+      1,
+      2
+    ],
+    "validation_session": 3,
+    "test_sessions": [
+      4,
+      5
+    ],
+    "seeds": [
+      42,
+      1337,
+      2026
+    ],
+    "matching": "Same initial robot state, target sequence, neural/electrode RNG seeds per path; trajectories diverge under feedback.",
+    "gate_threshold": 0.18,
+    "hysteresis_decisions": 2,
+    "window_seconds": 0.2,
+    "decision_interval_seconds": 0.1,
+    "adaptation": "Deferred pending closed-loop baseline review.",
+    "limits": "Toy rate circuit, supervised synthetic targets, short continuous rest; no human EEG claims. No test-based retuning."
+  },
+  "calibration": {
+    "42": {
+      "direct": {
+        "alpha": 10.0,
+        "validation_drive_mse": 0.03264054559204402,
+        "validation_rate_mse": null
+      },
+      "neurons": {
+        "alpha": 1.0,
+        "validation_drive_mse": 0.03360926219072283,
+        "validation_rate_mse": 0.0009351742000099681
+      },
+      "populations": {
+        "alpha": 100.0,
+        "validation_drive_mse": 0.035800994173480184,
+        "validation_rate_mse": 0.0014259446131325484
+      },
+      "constant": {
+        "alpha": 0.1,
+        "validation_drive_mse": 0.3308103103239582,
+        "validation_rate_mse": 0.08259623685627744
+      }
+    },
+    "1337": {
+      "direct": {
+        "alpha": 100.0,
+        "validation_drive_mse": 0.039427885613494154,
+        "validation_rate_mse": null
+      },
+      "neurons": {
+        "alpha": 100.0,
+        "validation_drive_mse": 0.03905921588715873,
+        "validation_rate_mse": 0.0004688465528458825
+      },
+      "populations": {
+        "alpha": 0.1,
+        "validation_drive_mse": 0.03856846266983096,
+        "validation_rate_mse": 0.0018769666952113703
+      },
+      "constant": {
+        "alpha": 0.1,
+        "validation_drive_mse": 0.3302350039880291,
+        "validation_rate_mse": 0.08450010539247076
+      }
+    },
+    "2026": {
+      "direct": {
+        "alpha": 100.0,
+        "validation_drive_mse": 0.04564749440099624,
+        "validation_rate_mse": null
+      },
+      "neurons": {
+        "alpha": 100.0,
+        "validation_drive_mse": 0.04601188152884561,
+        "validation_rate_mse": 0.0003490336217001804
+      },
+      "populations": {
+        "alpha": 0.1,
+        "validation_drive_mse": 0.045416969239382446,
+        "validation_rate_mse": 0.0018345575179747591
+      },
+      "constant": {
+        "alpha": 0.1,
+        "validation_drive_mse": 0.32498721785546286,
+        "validation_rate_mse": 0.08258599002241716
+      }
+    }
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "session": 4,
+      "path": "direct",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.06,
+          "overshoot_rad": 0.16767508765326355,
+          "final_error_rad": -0.10162324141542478
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.6,
+          "overshoot_rad": 0.03125352030997963,
+          "final_error_rad": 0.007861921594282784
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.46,
+          "overshoot_rad": 0.1847054836620664,
+          "final_error_rad": -0.11117835830810885
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.048019647512001676,
+      "observation_to_command_seconds_mean": 0.20048530621244576,
+      "observation_to_command_seconds_max": 0.22094200000283282,
+      "wall_observation_to_application_seconds_mean": 0.013056174498003482,
+      "wall_observation_to_application_seconds_max": 0.0592631999970763,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.249920700000075
+    },
+    {
+      "seed": 42,
+      "session": 4,
+      "path": "neurons",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.82,
+          "overshoot_rad": 0.2588761003951501,
+          "final_error_rad": -0.15126900172098257
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.7,
+          "overshoot_rad": 0.0597331760471106,
+          "final_error_rad": 0.009496080680984953
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 2.18,
+          "overshoot_rad": 0.23755407921450877,
+          "final_error_rad": -0.14652881633105086
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.00026255795128397316,
+      "constant_reconstruction_mse": 0.04789792839720368,
+      "observation_to_command_seconds_mean": 0.20076435851709856,
+      "observation_to_command_seconds_max": 0.21571729999705003,
+      "wall_observation_to_application_seconds_mean": 0.013566955220691549,
+      "wall_observation_to_application_seconds_max": 0.047623999998904765,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.4286475999979302
+    },
+    {
+      "seed": 42,
+      "session": 4,
+      "path": "populations",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.12,
+          "overshoot_rad": 0.05927977287788022,
+          "final_error_rad": -0.03282183729555688
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.11038426682734104,
+          "final_error_rad": 0.09512280228978177
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.07442994530885383,
+          "final_error_rad": -0.052727048282689926
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0005123658993642189,
+      "constant_reconstruction_mse": 0.05531973274667024,
+      "observation_to_command_seconds_mean": 0.20078927394803717,
+      "observation_to_command_seconds_max": 0.21038269999844417,
+      "wall_observation_to_application_seconds_mean": 0.014533191767174528,
+      "wall_observation_to_application_seconds_max": 0.060575499999686144,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.6964676000061445
+    },
+    {
+      "seed": 42,
+      "session": 4,
+      "path": "constant",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.20479086967364168,
+      "constant_reconstruction_mse": 0.20479086967364168,
+      "observation_to_command_seconds_mean": 0.20093110781554116,
+      "observation_to_command_seconds_max": 0.22417159999458747,
+      "wall_observation_to_application_seconds_mean": 0.020895189156603974,
+      "wall_observation_to_application_seconds_max": 0.07473749999917345,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 5.270456900005229
+    },
+    {
+      "seed": 42,
+      "session": 5,
+      "path": "direct",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.08462201610669551,
+          "final_error_rad": -0.05652739584887789
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.10746858319481423,
+          "final_error_rad": 0.08110707220908642
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.74,
+          "overshoot_rad": 0.09850768399780763,
+          "final_error_rad": -0.08183017850982467
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.05565295330475688,
+      "observation_to_command_seconds_mean": 0.20046713747475162,
+      "observation_to_command_seconds_max": 0.22193929999339446,
+      "wall_observation_to_application_seconds_mean": 0.012997802409389473,
+      "wall_observation_to_application_seconds_max": 0.057311000004119705,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.31775860000198
+    },
+    {
+      "seed": 42,
+      "session": 5,
+      "path": "neurons",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.3800000000000001,
+          "overshoot_rad": 0.0023018469913387296,
+          "final_error_rad": 0.022225981556025176
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.52,
+          "overshoot_rad": 0.16487393786459503,
+          "final_error_rad": 0.13062763591870918
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.8800000000000001,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.024394808522521187
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0003680067860480527,
+      "constant_reconstruction_mse": 0.05301538644370198,
+      "observation_to_command_seconds_mean": 0.2007406426853795,
+      "observation_to_command_seconds_max": 0.2131943000014873,
+      "wall_observation_to_application_seconds_mean": 0.01357738554222478,
+      "wall_observation_to_application_seconds_max": 0.06155130000115605,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.473432099999627
+    },
+    {
+      "seed": 42,
+      "session": 5,
+      "path": "populations",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.48,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.02623816247963162
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.04812659443821521,
+          "final_error_rad": 0.010104556614244586
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.94,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.056304046217875214
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0007733551978284113,
+      "constant_reconstruction_mse": 0.05739299277876613,
+      "observation_to_command_seconds_mean": 0.2007895827656472,
+      "observation_to_command_seconds_max": 0.21389829999970988,
+      "wall_observation_to_application_seconds_mean": 0.013695032530120946,
+      "wall_observation_to_application_seconds_max": 0.04058899999654386,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.48382319999655
+    },
+    {
+      "seed": 42,
+      "session": 5,
+      "path": "constant",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.20480584235004087,
+      "constant_reconstruction_mse": 0.20480584235004087,
+      "observation_to_command_seconds_mean": 0.20048235871749612,
+      "observation_to_command_seconds_max": 0.21378229999681952,
+      "wall_observation_to_application_seconds_mean": 0.01366597610455891,
+      "wall_observation_to_application_seconds_max": 0.06148820000089472,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.500032199997804
+    },
+    {
+      "seed": 1337,
+      "session": 4,
+      "path": "direct",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.24,
+          "overshoot_rad": 0.023038188099572254,
+          "final_error_rad": 0.02222165224058803
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.12011699495802064,
+          "final_error_rad": 0.11394224652984863
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.68,
+          "overshoot_rad": 0.05276628061701482,
+          "final_error_rad": 0.0024893569182391495
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.05243593872098635,
+      "observation_to_command_seconds_mean": 0.20042489358717297,
+      "observation_to_command_seconds_max": 0.2126301999989666,
+      "wall_observation_to_application_seconds_mean": 0.012969179919835655,
+      "wall_observation_to_application_seconds_max": 0.05072959999961313,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.290962599996419
+    },
+    {
+      "seed": 1337,
+      "session": 4,
+      "path": "neurons",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.033646975978863125,
+          "final_error_rad": -0.011712115548849544
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.07461662386169932,
+          "final_error_rad": 0.04213350869061128
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.58,
+          "overshoot_rad": 0.04550800996259429,
+          "final_error_rad": -0.016024767487921032
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.00028817384532354675,
+      "constant_reconstruction_mse": 0.05465811595659418,
+      "observation_to_command_seconds_mean": 0.20088107014034284,
+      "observation_to_command_seconds_max": 0.21633339999534584,
+      "wall_observation_to_application_seconds_mean": 0.013108513855327311,
+      "wall_observation_to_application_seconds_max": 0.051286800000525545,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.314084500001627
+    },
+    {
+      "seed": 1337,
+      "session": 4,
+      "path": "populations",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.030966834933177756,
+          "final_error_rad": 0.004474030072136537
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.52,
+          "overshoot_rad": 0.12485800712969153,
+          "final_error_rad": 0.09798804449021825
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.6,
+          "overshoot_rad": 0.04142628664779158,
+          "final_error_rad": -0.017038717744446985
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0008821492984819943,
+      "constant_reconstruction_mse": 0.05454857776120275,
+      "observation_to_command_seconds_mean": 0.20072784949900932,
+      "observation_to_command_seconds_max": 0.21378490000206485,
+      "wall_observation_to_application_seconds_mean": 0.013387565863663312,
+      "wall_observation_to_application_seconds_max": 0.049808000003395136,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.3686259999958565
+    },
+    {
+      "seed": 1337,
+      "session": 4,
+      "path": "constant",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.204501770023104,
+      "constant_reconstruction_mse": 0.204501770023104,
+      "observation_to_command_seconds_mean": 0.200470403206279,
+      "observation_to_command_seconds_max": 0.21398039999912724,
+      "wall_observation_to_application_seconds_mean": 0.0129747188756698,
+      "wall_observation_to_application_seconds_max": 0.04574050000519492,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.284116000002541
+    },
+    {
+      "seed": 1337,
+      "session": 5,
+      "path": "direct",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.12,
+          "overshoot_rad": 0.028390602411057175,
+          "final_error_rad": 0.015961061127990117
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.6400000000000001,
+          "overshoot_rad": 0.06060847698504224,
+          "final_error_rad": 0.03739621952454963
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.08045888693035808,
+          "final_error_rad": -0.048139235340812325
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.054682258229454855,
+      "observation_to_command_seconds_mean": 0.2005383110221822,
+      "observation_to_command_seconds_max": 0.21917500000126888,
+      "wall_observation_to_application_seconds_mean": 0.012828751003961584,
+      "wall_observation_to_application_seconds_max": 0.0530979999966803,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.288960199999565
+    },
+    {
+      "seed": 1337,
+      "session": 5,
+      "path": "neurons",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.12,
+          "overshoot_rad": 0.04757203143166033,
+          "final_error_rad": -0.022746271125739126
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.12146349825790004,
+          "final_error_rad": 0.10755297584153889
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.08434643436784939,
+          "final_error_rad": -0.06252242581061906
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.00024057931901874527,
+      "constant_reconstruction_mse": 0.051732287268409595,
+      "observation_to_command_seconds_mean": 0.2007482739477176,
+      "observation_to_command_seconds_max": 0.21415229999838625,
+      "wall_observation_to_application_seconds_mean": 0.013254816666744317,
+      "wall_observation_to_application_seconds_max": 0.05555830000230344,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.400740600001882
+    },
+    {
+      "seed": 1337,
+      "session": 5,
+      "path": "populations",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.12,
+          "overshoot_rad": 0.038611952482588974,
+          "final_error_rad": -0.002833037578720221
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.52,
+          "overshoot_rad": 0.137936146992658,
+          "final_error_rad": 0.12254154930329964
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.6,
+          "overshoot_rad": 0.04714651169250839,
+          "final_error_rad": -0.013498536460858412
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0010885226960752532,
+      "constant_reconstruction_mse": 0.051635224930498366,
+      "observation_to_command_seconds_mean": 0.20067824468929532,
+      "observation_to_command_seconds_max": 0.21456999999936688,
+      "wall_observation_to_application_seconds_mean": 0.012919281325258018,
+      "wall_observation_to_application_seconds_max": 0.04795919999742182,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.3196372000020347
+    },
+    {
+      "seed": 1337,
+      "session": 5,
+      "path": "constant",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.204537116557523,
+      "constant_reconstruction_mse": 0.204537116557523,
+      "observation_to_command_seconds_mean": 0.200469557114199,
+      "observation_to_command_seconds_max": 0.21268430000345706,
+      "wall_observation_to_application_seconds_mean": 0.01275636425726775,
+      "wall_observation_to_application_seconds_max": 0.03850129999773344,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.2579206000009435
+    },
+    {
+      "seed": 2026,
+      "session": 4,
+      "path": "direct",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.18,
+          "overshoot_rad": 0.056277888460044334,
+          "final_error_rad": -0.034792077582533
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.6600000000000001,
+          "overshoot_rad": 0.005517288697728051,
+          "final_error_rad": -0.034294097666145336
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.58,
+          "overshoot_rad": 0.07108059238115118,
+          "final_error_rad": -0.052734146413349274
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.05594776435467379,
+      "observation_to_command_seconds_mean": 0.2004449999998808,
+      "observation_to_command_seconds_max": 0.21282790000550467,
+      "wall_observation_to_application_seconds_mean": 0.012547976305245082,
+      "wall_observation_to_application_seconds_max": 0.06086009999853559,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.1874797999989823
+    },
+    {
+      "seed": 2026,
+      "session": 4,
+      "path": "neurons",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.12,
+          "overshoot_rad": 0.06625228374416992,
+          "final_error_rad": -0.03779627044474676
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.028482374205622496,
+          "final_error_rad": -0.006079831149271242
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.52,
+          "overshoot_rad": 0.06549164520340911,
+          "final_error_rad": -0.03385793048007646
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 9.169817356230495e-05,
+      "constant_reconstruction_mse": 0.055489370747681475,
+      "observation_to_command_seconds_mean": 0.2007572452905195,
+      "observation_to_command_seconds_max": 0.2148184999998186,
+      "wall_observation_to_application_seconds_mean": 0.013028835140391446,
+      "wall_observation_to_application_seconds_max": 0.03970359999948414,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.331335599999875
+    },
+    {
+      "seed": 2026,
+      "session": 4,
+      "path": "populations",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.12,
+          "overshoot_rad": 0.05638254126281006,
+          "final_error_rad": -0.0030835755342923936
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.1166834031507945,
+          "final_error_rad": 0.10638288023296949
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.58,
+          "overshoot_rad": 0.08792184576239981,
+          "final_error_rad": -0.05858758875025061
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0011776119120967476,
+      "constant_reconstruction_mse": 0.052933349604782916,
+      "observation_to_command_seconds_mean": 0.20075197555098295,
+      "observation_to_command_seconds_max": 0.21333000000158786,
+      "wall_observation_to_application_seconds_mean": 0.013527218674820447,
+      "wall_observation_to_application_seconds_max": 0.051562900000135414,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.4062114999978803
+    },
+    {
+      "seed": 2026,
+      "session": 4,
+      "path": "constant",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.21134368092621425,
+      "constant_reconstruction_mse": 0.21134368092621425,
+      "observation_to_command_seconds_mean": 0.2005758296592218,
+      "observation_to_command_seconds_max": 0.2148465000020221,
+      "wall_observation_to_application_seconds_mean": 0.0133606295179247,
+      "wall_observation_to_application_seconds_max": 0.05105550000007497,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.3877525000061723
+    },
+    {
+      "seed": 2026,
+      "session": 5,
+      "path": "direct",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.18,
+          "overshoot_rad": 0.05007760236838533,
+          "final_error_rad": -0.00281437303665788
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.6400000000000001,
+          "overshoot_rad": 0.12157686477089291,
+          "final_error_rad": 0.10961715420662342
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.58,
+          "overshoot_rad": 0.08296696416121385,
+          "final_error_rad": -0.053155272204029935
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.05343988108968123,
+      "observation_to_command_seconds_mean": 0.20052107555105567,
+      "observation_to_command_seconds_max": 0.21723369999672304,
+      "wall_observation_to_application_seconds_mean": 0.013935500000170797,
+      "wall_observation_to_application_seconds_max": 0.08210239999607438,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.550258200004464
+    },
+    {
+      "seed": 2026,
+      "session": 5,
+      "path": "neurons",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.05297057993618948,
+          "final_error_rad": -0.00895133134550452
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.52,
+          "overshoot_rad": 0.10046786848651179,
+          "final_error_rad": 0.08104514675248485
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.10723950243492097,
+          "final_error_rad": -0.07934087695780812
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0003447995462380895,
+      "constant_reconstruction_mse": 0.05519103366768815,
+      "observation_to_command_seconds_mean": 0.20071273406831466,
+      "observation_to_command_seconds_max": 0.21776690000406163,
+      "wall_observation_to_application_seconds_mean": 0.013043340160407408,
+      "wall_observation_to_application_seconds_max": 0.049221299996133894,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.345322600005602
+    },
+    {
+      "seed": 2026,
+      "session": 5,
+      "path": "populations",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.10865494963265054,
+          "final_error_rad": -0.07901033020377213
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.10958131168341667,
+          "final_error_rad": 0.08515268535666255
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.09399596723912784,
+          "final_error_rad": -0.06806775267407493
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0017548966917523246,
+      "constant_reconstruction_mse": 0.05554823072240593,
+      "observation_to_command_seconds_mean": 0.2006716236470854,
+      "observation_to_command_seconds_max": 0.21204310000321128,
+      "wall_observation_to_application_seconds_mean": 0.013191218473980096,
+      "wall_observation_to_application_seconds_max": 0.047362600002088584,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.3629908000002615
+    },
+    {
+      "seed": 2026,
+      "session": 5,
+      "path": "constant",
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.21140526438494964,
+      "constant_reconstruction_mse": 0.21140526438494964,
+      "observation_to_command_seconds_mean": 0.200476410821499,
+      "observation_to_command_seconds_max": 0.2132742999994659,
+      "wall_observation_to_application_seconds_mean": 0.01270197329325176,
+      "wall_observation_to_application_seconds_max": 0.040215699998952914,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.2406979000006686
+    }
+  ],
+  "summary": {
+    "direct": {
+      "target_success_rate": 1.0,
+      "successful_targets": 18,
+      "total_targets": 18,
+      "episodes_with_fall": 0,
+      "mean_settling_seconds_successful_only": 1.4511111111111115,
+      "mean_overshoot_rad": 0.07928383365361709,
+      "mean_reconstruction_mse": null,
+      "mean_constant_reconstruction_mse": 0.05336307386859246,
+      "false_events_after_washout": 0,
+      "total_rest_seconds": 72.0,
+      "mean_observation_to_command_seconds": 0.2004802873079148
+    },
+    "neurons": {
+      "target_success_rate": 1.0,
+      "successful_targets": 18,
+      "total_targets": 18,
+      "episodes_with_fall": 0,
+      "mean_settling_seconds_successful_only": 1.517777777777778,
+      "mean_overshoot_rad": 0.08618872046578296,
+      "mean_reconstruction_mse": 0.0002659692702457854,
+      "mean_constant_reconstruction_mse": 0.05299735374687983,
+      "false_events_after_washout": 0,
+      "total_rest_seconds": 72.0,
+      "mean_observation_to_command_seconds": 0.20076738744156208
+    },
+    "populations": {
+      "target_success_rate": 1.0,
+      "successful_targets": 18,
+      "total_targets": 18,
+      "episodes_with_fall": 0,
+      "mean_settling_seconds_successful_only": 1.4533333333333331,
+      "mean_overshoot_rad": 0.07146590767010591,
+      "mean_reconstruction_mse": 0.0010314836159331583,
+      "mean_constant_reconstruction_mse": 0.05456301809072106,
+      "false_events_after_washout": 0,
+      "total_rest_seconds": 72.0,
+      "mean_observation_to_command_seconds": 0.20073475835000953
+    },
+    "constant": {
+      "target_success_rate": 0.0,
+      "successful_targets": 0,
+      "total_targets": 18,
+      "episodes_with_fall": 0,
+      "mean_settling_seconds_successful_only": null,
+      "mean_overshoot_rad": 0.0,
+      "mean_reconstruction_mse": 0.20689742398591218,
+      "mean_constant_reconstruction_mse": 0.20689742398591218,
+      "false_events_after_washout": 0,
+      "total_rest_seconds": 72.0,
+      "mean_observation_to_command_seconds": 0.20056761122237265
+    }
+  }
+}

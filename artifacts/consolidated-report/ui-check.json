@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-02",
+  "browser": "Microsoft Edge",
+  "url": "local artifacts/consolidated-report/report.html",
+  "observed": [
+    "latest report top rendering",
+    "calibration anchor navigation",
+    "table wrapping at approximately1034px width"
+  ],
+  "saved_figures_inspected": [
+    "feature-summary.png",
+    "paired-calibration.png",
+    "all-curves.png",
+    "calibration-sequences.png",
+    "confusion.png"
+  ],
+  "fixes": [
+    "consistent Left/Right recall colors",
+    "confusion text contrast relative to colormap range",
+    "legend below calibration curve axes",
+    "launcher setlocal and --no-open"
+  ],
+  "regression": "45 tests passed in25.660s",
+  "final_launcher_test": "passed in7.882s; model hashes unchanged",
+  "remaining": [
+    "disclosure interactions",
+    "download-link clicks"
+  ],
+  "blocker": "encode latest capture frame failed: window crop is outside captured monitor; recovery selection and one capture retry also failed",
+  "no_bypass": true
+}

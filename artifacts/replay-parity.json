@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "clean",
+    "width": 24,
+    "predictions_and_commands_identical": true
+  },
+  {
+    "condition": "clean",
+    "width": 48,
+    "predictions_and_commands_identical": true
+  },
+  {
+    "condition": "noise_hard",
+    "width": 24,
+    "predictions_and_commands_identical": true
+  },
+  {
+    "condition": "noise_hard",
+    "width": 48,
+    "predictions_and_commands_identical": true
+  }
+]

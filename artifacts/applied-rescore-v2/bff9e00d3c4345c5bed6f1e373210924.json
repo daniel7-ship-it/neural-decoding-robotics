@@ -1,0 +1,70 @@
+{
+  "source": "C:\\Users\\Daniel\\Documents\\ChatGPT\\Random\\brain-controlled-microduck\\artifacts\\neural-replay-runs\\bff9e00d3c4345c5bed6f1e373210924.json",
+  "old": {
+    "transition_carryover_events": 0,
+    "new_rest_activation_events": 0,
+    "movement": [
+      {
+        "block": 60,
+        "delay_seconds": 0.3599999999999852,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8235294117647058,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      }
+    ],
+    "stops": [
+      {
+        "block": 59,
+        "delay_seconds": 0.9799999999999898,
+        "within_deadline": false,
+        "sustained_zero": true,
+        "timely_sustained_stop": false
+      }
+    ],
+    "movement_episodes": 1,
+    "movement_detected": 1,
+    "deadline_hits": 1,
+    "occupancy_80_hits": 1,
+    "movement_interruptions": 0,
+    "wrong_direction_samples": 0,
+    "median_onset_seconds": 0.3599999999999852,
+    "p95_onset_seconds": 0.3599999999999852,
+    "stop_transitions": 1,
+    "stop_deadline_hits": 0,
+    "timely_sustained_stops": 0,
+    "median_stop_seconds": 0.9799999999999898,
+    "false_rest_events": 0,
+    "rest_occupancy": 0.0,
+    "rest_seconds": 0.8,
+    "long_rest_false_events": 0,
+    "long_rest_seconds": 0.0
+  },
+  "corrected": {
+    "movement_episodes": 1,
+    "movement_detected": 1,
+    "deadline_hits": 1,
+    "false_rest_events": 0,
+    "transition_carryover_events": 0,
+    "new_rest_activation_events": 0,
+    "rest_seconds": 0.7400000000000091,
+    "rest_occupancy": 0.0,
+    "timely_sustained_stops": 0,
+    "movement": [
+      {
+        "block": 60,
+        "delay_seconds": 0.28000000000000114,
+        "correct_command_occupancy": 0.8409090909090895,
+        "interruptions": 0
+      }
+    ],
+    "initial_active_rest": 0,
+    "missed_episodes": 0,
+    "median_onset_seconds": 0.28000000000000114,
+    "p95_onset_seconds": 0.28000000000000114,
+    "false_rest_events_per_minute": 0.0,
+    "movement_interruptions": 0
+  },
+  "limitation": "Nonterminal last frame excluded because historical trace lacks an explicit interval endpoint."
+}

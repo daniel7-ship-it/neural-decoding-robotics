@@ -1,0 +1,7 @@
+test_end_seek_does_not_repeat_final_window (test_replay_engine.ReplayEngineTests.test_end_seek_does_not_repeat_final_window) ... ok
+test_saved_trace_order_commands_and_completion (test_replay_engine.ReplayEngineTests.test_saved_trace_order_commands_and_completion) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.372s
+
+OK

@@ -1,0 +1,28 @@
+test_recording_only_deterministic_and_pre_onset (test_augmentation.AugmentationContracts.test_recording_only_deterministic_and_pre_onset) ... ok
+test_hysteresis_stop_and_expiry (test_closed_loop.ContinuousTests.test_hysteresis_stop_and_expiry) ... ok
+test_persistent_state_and_causal_window (test_closed_loop.ContinuousTests.test_persistent_state_and_causal_window) ... ok
+test_real_policy_feedback_and_inference_boundary (test_closed_loop.ContinuousTests.test_real_policy_feedback_and_inference_boundary) ... ok
+test_command_expiry_and_invalid_values (test_contracts.ContractTests.test_command_expiry_and_invalid_values) ... ok
+test_decode_separate_session_and_silencing (test_contracts.ContractTests.test_decode_separate_session_and_silencing) ... ok
+test_policy_tracks_forward_and_opposite_turns (test_contracts.ContractTests.test_policy_tracks_forward_and_opposite_turns) ... ok
+test_no_signal_cannot_reconstruct_individual_trials (test_mapping.MappingTests.test_no_signal_cannot_reconstruct_individual_trials) ... ok
+test_repeatable_paired_silencing_and_fixed_anatomy (test_mapping.MappingTests.test_repeatable_paired_silencing_and_fixed_anatomy) ... ok
+test_split_guard_and_parameters (test_mapping.MappingTests.test_split_guard_and_parameters) ... ok
+test_ambiguous_movement_abstains_and_strong_movement_passes (test_rest_gate.RestGateTests.test_ambiguous_movement_abstains_and_strong_movement_passes) ... ok
+test_late_single_hit_is_not_timely_or_sustained (test_rest_gate_review.ReviewMetricsTests.test_late_single_hit_is_not_timely_or_sustained) ... ok
+test_stop_only_counts_movement_to_rest_and_sustained_zero (test_rest_gate_review.ReviewMetricsTests.test_stop_only_counts_movement_to_rest_and_sustained_zero) ... ok
+test_development_choice_uses_only_supplied_rows (test_robustness.RobustnessTests.test_development_choice_uses_only_supplied_rows) ... ok
+test_inference_interface_and_adaptation_bound (test_robustness.RobustnessTests.test_inference_interface_and_adaptation_bound) ... ok
+test_paired_recording_changes_do_not_change_neurons (test_robustness.RobustnessTests.test_paired_recording_changes_do_not_change_neurons) ... ok
+test_protocol_split_and_bounded_search (test_robustness.RobustnessTests.test_protocol_split_and_bounded_search) ... ok
+test_acceptance_requires_movement_and_checks_delay (test_supervised.SupervisedContracts.test_acceptance_requires_movement_and_checks_delay) ... ok
+test_causal_windows (test_supervised.SupervisedContracts.test_causal_windows) ... ok
+test_gate_and_event_counts_include_transitions (test_supervised.SupervisedContracts.test_gate_and_event_counts_include_transitions) ... ok
+test_input_boundary_and_saved_round_trip (test_supervised.SupervisedContracts.test_input_boundary_and_saved_round_trip) ... ok
+test_splits_and_training_only_preprocessing (test_supervised.SupervisedContracts.test_splits_and_training_only_preprocessing) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 13.217s
+
+OK
+Measured forward/left/right velocities: {'forward': array([0.08101187, 0.00111151, 0.05696655]), 'left': array([-7.06973030e-03, -1.13144684e-03,  1.41221125e+00]), 'right': array([ 0.00139296, -0.00930047, -1.31555687])}

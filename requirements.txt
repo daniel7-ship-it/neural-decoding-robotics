@@ -1,0 +1,8 @@
+numpy==2.5.4
+mujoco==3.17.0
+onnxruntime==1.31.1
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+mne==1.13.2
+better-actuator-models @ git+https://github.com/Rhoban/bam.git@57d13ead53206a6bf0db3d66f86506ae8c2ce01a

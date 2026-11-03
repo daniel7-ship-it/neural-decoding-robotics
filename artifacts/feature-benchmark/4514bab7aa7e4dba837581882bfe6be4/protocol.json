@@ -1,0 +1,26 @@
+{
+  "subjects": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "runs": {
+    "train": 4,
+    "validation": 8,
+    "evaluation": 12
+  },
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "epochs": 60,
+  "lr": 0.001,
+  "features": "Welch160Hz 1s segments, log integrated V^2 bands8-13/13-20/20-30; CSP6 log variance",
+  "teacher": "statistical model must achieve validation BA>=.80 and each recall>=.75 in ALL five development subjects",
+  "selection": "minimum validation loss",
+  "quality": "flags only; all trials evaluated",
+  "maximum_configurations": "three representations; one MLP32 per feature; LDA shrinkage auto; fixed CNN"
+}

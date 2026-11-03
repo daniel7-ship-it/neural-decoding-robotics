@@ -1,0 +1,7 @@
+{
+  "augmented-lda.joblib": "c953063bd6766a1eeabdea150b0167a95986b4731d77abbb8a46832aab575f47",
+  "augmented-mlp-101.pt": "27a159467e1356c11aed397998e4b98a8495810c7fc506db2b2a32fa249426be",
+  "augmented-mlp-202.pt": "017d4d6ac500a1d37f6b5e4591fe8dbe6d69ef0709b7dd5687a5e74b80c3b9b9",
+  "augmented-mlp-303.pt": "f68d5c9203094a19135bad8efd7a997c79cd090b9de6b7507c618b41f1305a04",
+  "augmented-ridge.joblib": "9a4e2db91132af6a577725f16823d77161b76c4d910777952b911be637ac9354"
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "trace": "04b15e5855ae4c349da3965934d1c875.json",
+    "old_rest": 0.0,
+    "new_rest": 0.0
+  },
+  {
+    "trace": "2ea229d2f8364e5bbbdab8f124d80320.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "40a3873b5d04422e8a91d405728f253c.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "4b501d2c9552429abff825eb722f8438.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "5ad2c352e83d4f8a84d7b331bf6653a1.json",
+    "old_rest": 52.1,
+    "new_rest": 52.25000000000003
+  },
+  {
+    "trace": "ad2ddb80b9cc4e618a6ab1111f5a7043.json",
+    "old_rest": 0.0,
+    "new_rest": 0.0
+  },
+  {
+    "trace": "bff9e00d3c4345c5bed6f1e373210924.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "e68c282dbedb4c6fab9481077bcb667a.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "eb870b3e49714fc8a564326960ce99f9.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "ef55ce8c14a34f9e9f470c95c0554db0.json",
+    "old_rest": 0.8,
+    "new_rest": 0.7400000000000091
+  },
+  {
+    "trace": "f93f1a47989e4343b110479a40a9a58d.json",
+    "old_rest": null,
+    "new_rest": 4.980000000000004
+  }
+]

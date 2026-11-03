@@ -1,0 +1,24 @@
+{
+  "scope": "development; no fresh confirmation",
+  "subjects": [
+    7,
+    8
+  ],
+  "budgets": [
+    4,
+    8,
+    12
+  ],
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "updates": 50,
+  "learning_rate": 0.001,
+  "calibration_run": 4,
+  "evaluation_run": 12,
+  "policy": "all trials scored; quality flags reported only",
+  "selection": "first n/2 examples of each label, nested",
+  "pool": "historical pooled models trained subjects2-6; checkpoint selected subjects7-8, hence development only"
+}

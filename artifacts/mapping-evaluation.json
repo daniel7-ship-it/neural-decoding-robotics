@@ -1,0 +1,1598 @@
+{
+  "design": {
+    "seeds": [
+      42,
+      1337,
+      2026
+    ],
+    "train_sessions": [
+      0,
+      1,
+      2
+    ],
+    "validation_session": 3,
+    "test_sessions": [
+      4,
+      5
+    ],
+    "repetitions_per_class_per_session": 16,
+    "neuron_identity": "fixed circuit/anatomy within each seed, new electrode jitter and noise per session",
+    "electrode_count": "recalibrate per nested channel subset; noise/shift/silence use frozen control models",
+    "target": "96 window-mean synthetic rates; not temporal spikes or structural connectivity",
+    "limitations": "Toy low-dimensional circuit with strong lateralized cues. Paired windows are not independent subjects; seed SD is not a confidence interval. No live human data."
+  },
+  "summary": {
+    "control": {
+      "balanced_accuracy": {
+        "mean": 0.9930555555555555,
+        "sd_across_seeds": 0.009820927516479843
+      },
+      "reconstruction_mse": {
+        "mean": 0.0019411558751016855,
+        "sd_across_seeds": 0.0008392090081865978
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.9883777893220106,
+        "sd_across_seeds": 0.003950116607283752
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    },
+    "12_electrodes": {
+      "balanced_accuracy": {
+        "mean": 0.9895833333333334,
+        "sd_across_seeds": 0.008505172717997162
+      },
+      "reconstruction_mse": {
+        "mean": 0.0020640691509470344,
+        "sd_across_seeds": 0.0013392851019300577
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.987784002537202,
+        "sd_across_seeds": 0.00684615311573589
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.38888888888888884,
+        "sd_across_seeds": 0.07856742013183862
+      }
+    },
+    "6_electrodes": {
+      "balanced_accuracy": {
+        "mean": 0.9895833333333334,
+        "sd_across_seeds": 0.008505172717997162
+      },
+      "reconstruction_mse": {
+        "mean": 0.0025332585209980607,
+        "sd_across_seeds": 0.0010363469862514035
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.9847206275192114,
+        "sd_across_seeds": 0.004872064540182396
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    },
+    "2_electrodes": {
+      "balanced_accuracy": {
+        "mean": 0.9722222222222223,
+        "sd_across_seeds": 0.019641855032959635
+      },
+      "reconstruction_mse": {
+        "mean": 0.005448234151117504,
+        "sd_across_seeds": 0.003125629002622888
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.9667245461811755,
+        "sd_across_seeds": 0.0195321083807797
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    },
+    "noise_0.5": {
+      "balanced_accuracy": {
+        "mean": 0.6875,
+        "sd_across_seeds": 0.13687780100296543
+      },
+      "reconstruction_mse": {
+        "mean": 0.011443468742072582,
+        "sd_across_seeds": 0.0022817943185198014
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.9274912314241637,
+        "sd_across_seeds": 0.02071785577843254
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.27777777777777773,
+        "sd_across_seeds": 0.08603827564836018
+      }
+    },
+    "noise_1.5": {
+      "balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      },
+      "reconstruction_mse": {
+        "mean": 0.1250180502732595,
+        "sd_across_seeds": 0.02294398148293109
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.20889258030473626,
+        "sd_across_seeds": 0.21377500202023436
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.32638888888888884,
+        "sd_across_seeds": 0.009820927516479817
+      }
+    },
+    "shift_0.4": {
+      "balanced_accuracy": {
+        "mean": 0.4270833333333333,
+        "sd_across_seeds": 0.06750771560841522
+      },
+      "reconstruction_mse": {
+        "mean": 0.024131194377938908,
+        "sd_across_seeds": 0.0012017856339610199
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.8503565436822283,
+        "sd_across_seeds": 0.006677472818947145
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    },
+    "shift_1.0": {
+      "balanced_accuracy": {
+        "mean": 0.35763888888888884,
+        "sd_across_seeds": 0.034373246307679406
+      },
+      "reconstruction_mse": {
+        "mean": 0.15765061974525452,
+        "sd_across_seeds": 0.02274185013754709
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.030820400321267167,
+        "sd_across_seeds": 0.05550263989662856
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    },
+    "silence_left": {
+      "balanced_accuracy": {
+        "mean": 0.6527777777777777,
+        "sd_across_seeds": 0.019641855032959635
+      },
+      "reconstruction_mse": {
+        "mean": 0.0014250282644449423,
+        "sd_across_seeds": 0.0008688412514346128
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.9888251460913051,
+        "sd_across_seeds": 0.006358933678960995
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    },
+    "silence_right": {
+      "balanced_accuracy": {
+        "mean": 0.6631944444444443,
+        "sd_across_seeds": 0.004910463758239896
+      },
+      "reconstruction_mse": {
+        "mean": 0.0009128341528897485,
+        "sd_across_seeds": 0.00030702242522912665
+      },
+      "reconstruction_skill_vs_constant": {
+        "mean": 0.9916910670052522,
+        "sd_across_seeds": 0.002960970807852901
+      },
+      "false_movement_windows_per_60_rest_windows": {
+        "mean": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "shuffled_label_balanced_accuracy": {
+        "mean": 0.3333333333333333,
+        "sd_across_seeds": 0.0
+      }
+    }
+  },
+  "runs": [
+    {
+      "balanced_accuracy": 0.9791666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          2,
+          0,
+          30
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        0.9375
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0010997053468599916,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.992432289833701,
+      "compute_ms_per_window": 0.009105208353806423,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "control",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.15317876636981964
+    },
+    {
+      "balanced_accuracy": 1.0,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0013486570678651333,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.9907191086844527,
+      "compute_ms_per_window": 0.009360416659850065,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 10.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "12_electrodes",
+      "settings": {
+        "electrodes": 12,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.10982651263475418
+    },
+    {
+      "balanced_accuracy": 0.9895833333333334,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          1,
+          31,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.96875,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0019617900252342224,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.9864997852738466,
+      "compute_ms_per_window": 0.008378125016861304,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "6_electrodes",
+      "settings": {
+        "electrodes": 6,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.1498764157295227
+    },
+    {
+      "balanced_accuracy": 0.9583333333333334,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          1,
+          31,
+          0
+        ],
+        [
+          3,
+          0,
+          29
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.96875,
+        0.90625
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0017259340966120362,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.9881228466819887,
+      "compute_ms_per_window": 0.00813750000361324,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 10.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "2_electrodes",
+      "settings": {
+        "electrodes": 2,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.1551099568605423
+    },
+    {
+      "balanced_accuracy": 0.5,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          29,
+          3,
+          0
+        ],
+        [
+          19,
+          0,
+          13
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.09375,
+        0.40625
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.014523605816066265,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.9000546467293331,
+      "compute_ms_per_window": 0.008736458350237323,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "noise_0.5",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.5,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.34375,
+      "shuffled_target_reconstruction_mse": 0.11099180579185486
+    },
+    {
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.15591765940189362,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": -0.07295982467517281,
+      "compute_ms_per_window": 0.008754166666828192,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "noise_1.5",
+      "settings": {
+        "electrodes": 24,
+        "noise": 1.5,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3125,
+      "shuffled_target_reconstruction_mse": 0.27417346835136414
+    },
+    {
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ],
+        [
+          8,
+          24,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.022576991468667984,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.8446346302218755,
+      "compute_ms_per_window": 0.008830208306183826,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "shift_0.4",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.4,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.4779009222984314
+    },
+    {
+      "balanced_accuracy": 0.40625,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          30
+        ],
+        [
+          3,
+          22,
+          7
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.21875
+      ],
+      "accepted_fraction": 0.9895833333333334,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.12958753108978271,
+      "constant_mean_baseline_mse": 0.14531546831130981,
+      "reconstruction_skill_vs_constant": 0.10823305601460875,
+      "compute_ms_per_window": 0.008994791680076256,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "shift_1.0",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 1.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.3422825038433075
+    },
+    {
+      "balanced_accuracy": 0.625,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          28
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.875
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.00034819947904907167,
+      "constant_mean_baseline_mse": 0.11218100041151047,
+      "reconstruction_skill_vs_constant": 0.9968960922279907,
+      "compute_ms_per_window": 0.008682291650075058,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "silence_left",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": "left"
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.1248067244887352
+    },
+    {
+      "balanced_accuracy": 0.65625,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          1,
+          31,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.96875,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0012073004618287086,
+      "constant_mean_baseline_mse": 0.10310887545347214,
+      "reconstruction_skill_vs_constant": 0.988291013198243,
+      "compute_ms_per_window": 0.008974999976392914,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 42,
+      "condition": "silence_right",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": "right"
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.08774355053901672
+    },
+    {
+      "balanced_accuracy": 1.0,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0016370512312278152,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.9896785866946155,
+      "compute_ms_per_window": 0.008813541664191385,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "control",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.14535750448703766
+    },
+    {
+      "balanced_accuracy": 0.9895833333333334,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          1,
+          0,
+          31
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        0.96875
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0009030039655044675,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.994306667398929,
+      "compute_ms_per_window": 0.008493749987792398,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 10.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "12_electrodes",
+      "settings": {
+        "electrodes": 12,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.5,
+      "shuffled_target_reconstruction_mse": 0.1674789935350418
+    },
+    {
+      "balanced_accuracy": 0.9791666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          1,
+          31,
+          0
+        ],
+        [
+          1,
+          0,
+          31
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.96875,
+        0.96875
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0016501940554007888,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.9895957227513854,
+      "compute_ms_per_window": 0.00853958332906283,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 10.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "6_electrodes",
+      "settings": {
+        "electrodes": 6,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.17100827395915985
+    },
+    {
+      "balanced_accuracy": 0.9583333333333334,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          4,
+          28,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.875,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.009374014101922512,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.9408979560133387,
+      "compute_ms_per_window": 0.008391666635058451,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 0.1,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "2_electrodes",
+      "settings": {
+        "electrodes": 2,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.16673807799816132
+    },
+    {
+      "balanced_accuracy": 0.7395833333333334,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          15,
+          17,
+          0
+        ],
+        [
+          10,
+          0,
+          22
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.53125,
+        0.6875
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.010736733675003052,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.9323061711841295,
+      "compute_ms_per_window": 0.008751041680928514,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "noise_0.5",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.5,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.14536836743354797
+    },
+    {
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.11814437806606293,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.2551137481428424,
+      "compute_ms_per_window": 0.008963541669497014,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "noise_1.5",
+      "settings": {
+        "electrodes": 24,
+        "noise": 1.5,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.19148583710193634
+    },
+    {
+      "balanced_accuracy": 0.4895833333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          2,
+          15,
+          15
+        ],
+        [
+          9,
+          23,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.46875,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.024312667548656464,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.8467115228044014,
+      "compute_ms_per_window": 0.009024999978161455,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "shift_0.4",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.4,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.15786665678024292
+    },
+    {
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          24
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.1580757349729538,
+      "constant_mean_baseline_mse": 0.15860727429389954,
+      "reconstruction_skill_vs_constant": 0.00335129219836916,
+      "compute_ms_per_window": 0.008791666687102406,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "shift_1.0",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 1.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.112823486328125
+    },
+    {
+      "balanced_accuracy": 0.6666666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0014509414322674274,
+      "constant_mean_baseline_mse": 0.12321832776069641,
+      "reconstruction_skill_vs_constant": 0.9882246297394547,
+      "compute_ms_per_window": 0.00871666664655398,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "silence_left",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": "left"
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.09391871094703674
+    },
+    {
+      "balanced_accuracy": 0.6666666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0004892654251307249,
+      "constant_mean_baseline_mse": 0.10891617089509964,
+      "reconstruction_skill_vs_constant": 0.9955078715941827,
+      "compute_ms_per_window": 0.008581250009835154,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 1337,
+      "condition": "silence_right",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": "right"
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.11806973814964294
+    },
+    {
+      "balanced_accuracy": 1.0,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.00308671104721725,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.9830224914377148,
+      "compute_ms_per_window": 0.008760416638627552,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "control",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.27566730976104736
+    },
+    {
+      "balanced_accuracy": 0.9791666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          2,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.9375,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.003940546419471502,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.9783262315282241,
+      "compute_ms_per_window": 0.009128125005493834,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "12_electrodes",
+      "settings": {
+        "electrodes": 12,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.18183709681034088
+    },
+    {
+      "balanced_accuracy": 1.0,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.003987791482359171,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.9780663745324019,
+      "compute_ms_per_window": 0.00869062500896689,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "6_electrodes",
+      "settings": {
+        "electrodes": 6,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.19893701374530792
+    },
+    {
+      "balanced_accuracy": 1.0,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.005244754254817963,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.971152835848199,
+      "compute_ms_per_window": 0.008639583332599917,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 100.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "2_electrodes",
+      "settings": {
+        "electrodes": 2,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.19705983996391296
+    },
+    {
+      "balanced_accuracy": 0.8229166666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          18,
+          0
+        ],
+        [
+          3,
+          0,
+          29
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.5625,
+        0.90625
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.00907006673514843,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.9501128763590282,
+      "compute_ms_per_window": 0.009017708331763666,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "noise_0.5",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.5,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.15625,
+      "shuffled_target_reconstruction_mse": 2.381251573562622
+    },
+    {
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.1009921133518219,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.44452381744653924,
+      "compute_ms_per_window": 0.009015625020462418,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "noise_1.5",
+      "settings": {
+        "electrodes": 24,
+        "noise": 1.5,
+        "shift": 0.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 28.75265121459961
+    },
+    {
+      "balanced_accuracy": 0.4583333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          30
+        ],
+        [
+          12,
+          8,
+          12
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.375
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.02550392411649227,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": 0.8597234780204082,
+      "compute_ms_per_window": 0.010630208331955751,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "shift_0.4",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.4,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.9294244050979614
+    },
+    {
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          20
+        ],
+        [
+          3,
+          29,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.18528859317302704,
+      "constant_mean_baseline_mse": 0.18181177973747253,
+      "reconstruction_skill_vs_constant": -0.01912314724917641,
+      "compute_ms_per_window": 0.009598958323901266,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "shift_1.0",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 1.0,
+        "silence": null
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.8375287055969238
+    },
+    {
+      "balanced_accuracy": 0.6666666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0024759438820183277,
+      "constant_mean_baseline_mse": 0.13279196619987488,
+      "reconstruction_skill_vs_constant": 0.9813547163064699,
+      "compute_ms_per_window": 0.009077083329126859,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "silence_left",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": "left"
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.20880085229873657
+    },
+    {
+      "balanced_accuracy": 0.6666666666666666,
+      "confusion_matrix_rest_left_right": [
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ]
+      ],
+      "recall_rest_left_right": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "accepted_fraction": 1.0,
+      "false_movement_windows_per_60_rest_windows": 0.0,
+      "reconstruction_mse": 0.0010419365717098117,
+      "constant_mean_baseline_mse": 0.11941030621528625,
+      "reconstruction_skill_vs_constant": 0.991274316223331,
+      "compute_ms_per_window": 0.008860416680060249,
+      "observation_seconds_per_decision": 1.0,
+      "confidence_threshold_validation_selected": 0.5,
+      "ridge_alpha_validation_selected": 1.0,
+      "test_windows": 96,
+      "seed": 2026,
+      "condition": "silence_right",
+      "settings": {
+        "electrodes": 24,
+        "noise": 0.065,
+        "shift": 0.0,
+        "silence": "right"
+      },
+      "shuffled_label_balanced_accuracy": 0.3333333333333333,
+      "shuffled_target_reconstruction_mse": 0.13996955752372742
+    }
+  ]
+}

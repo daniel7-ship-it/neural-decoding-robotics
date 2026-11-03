@@ -1,0 +1,18 @@
+{
+  "subjects": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "runs": [
+    4,
+    8,
+    12
+  ],
+  "channel_rule": "Flag if abs amplitude >200uV in >50% of training-run imagery epochs, before rereferencing; exclude from reference and zero that channel after filtering in all runs",
+  "budget": "seed101, 150 full-batch Adam updates, select minimum run8 loss; 200 updates tiny overfit check",
+  "shuffle": "permute training labels only; validation uses same fixed checkpoint rule",
+  "scope": "development only; no fresh confirmation"
+}

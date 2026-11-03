@@ -1,0 +1,8 @@
+test_hysteresis_stop_and_expiry (test_closed_loop.ContinuousTests.test_hysteresis_stop_and_expiry) ... ok
+test_persistent_state_and_causal_window (test_closed_loop.ContinuousTests.test_persistent_state_and_causal_window) ... ok
+test_real_policy_feedback_and_inference_boundary (test_closed_loop.ContinuousTests.test_real_policy_feedback_and_inference_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.406s
+
+OK

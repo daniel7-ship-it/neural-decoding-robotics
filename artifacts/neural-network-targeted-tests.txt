@@ -1,0 +1,10 @@
+test_acceptance_requires_movement_and_checks_delay (test_supervised.SupervisedContracts.test_acceptance_requires_movement_and_checks_delay) ... ok
+test_causal_windows (test_supervised.SupervisedContracts.test_causal_windows) ... ok
+test_gate_and_event_counts_include_transitions (test_supervised.SupervisedContracts.test_gate_and_event_counts_include_transitions) ... ok
+test_input_boundary_and_saved_round_trip (test_supervised.SupervisedContracts.test_input_boundary_and_saved_round_trip) ... ok
+test_splits_and_training_only_preprocessing (test_supervised.SupervisedContracts.test_splits_and_training_only_preprocessing) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.787s
+
+OK

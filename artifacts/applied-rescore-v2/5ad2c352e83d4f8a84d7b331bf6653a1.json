@@ -1,0 +1,753 @@
+{
+  "source": "C:\\Users\\Daniel\\Documents\\ChatGPT\\Random\\brain-controlled-microduck\\artifacts\\neural-replay-runs\\5ad2c352e83d4f8a84d7b331bf6653a1.json",
+  "old": {
+    "transition_carryover_events": 15,
+    "new_rest_activation_events": 0,
+    "movement": [
+      {
+        "block": 2,
+        "delay_seconds": 0.23999999999999488,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.875,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 3,
+        "delay_seconds": 0.46000000000000796,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8333333333333334,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 1
+      },
+      {
+        "block": 4,
+        "delay_seconds": 0.480000000000004,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8620689655172413,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 1
+      },
+      {
+        "block": 5,
+        "delay_seconds": 0.09999999999999432,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 7,
+        "delay_seconds": 0.2300000000000182,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.9333333333333333,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 8,
+        "delay_seconds": 0.07999999999998408,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 11,
+        "delay_seconds": 0.47999999999998977,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8260869565217391,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 12,
+        "delay_seconds": 0.07999999999998408,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 13,
+        "delay_seconds": 0.5400000000000205,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.8076923076923077,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 14,
+        "delay_seconds": 0.030000000000001137,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 15,
+        "delay_seconds": 0.06999999999999318,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.875,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 1,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 16,
+        "delay_seconds": 0.0800000000000125,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 17,
+        "delay_seconds": 0.05000000000001137,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 19,
+        "delay_seconds": 0.5099999999999909,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.7916666666666666,
+        "at_least_80_percent_correct_occupancy": false,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 20,
+        "delay_seconds": 0.009999999999990905,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 21,
+        "delay_seconds": 0.09000000000000341,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 22,
+        "delay_seconds": 0.28000000000000114,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.9090909090909091,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 1
+      },
+      {
+        "block": 23,
+        "delay_seconds": 0.060000000000002274,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 25,
+        "delay_seconds": 0.23999999999998067,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8947368421052632,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 27,
+        "delay_seconds": 0.47999999999998977,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.7894736842105263,
+        "at_least_80_percent_correct_occupancy": false,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 28,
+        "delay_seconds": 0.060000000000002274,
+        "within_deadline": true,
+        "correct_command_occupancy": 1.0,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 30,
+        "delay_seconds": 0.2400000000000091,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8823529411764706,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 32,
+        "delay_seconds": 0.4900000000000091,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.7333333333333333,
+        "at_least_80_percent_correct_occupancy": false,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 34,
+        "delay_seconds": 0.5199999999999818,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.7058823529411765,
+        "at_least_80_percent_correct_occupancy": false,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 35,
+        "delay_seconds": 0.710000000000008,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.7666666666666667,
+        "at_least_80_percent_correct_occupancy": false,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 36,
+        "delay_seconds": 0.3400000000000034,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8333333333333334,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 38,
+        "delay_seconds": 0.30000000000001137,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8823529411764706,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 39,
+        "delay_seconds": 0.5500000000000114,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.8214285714285714,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 40,
+        "delay_seconds": 0.0800000000000125,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.9259259259259259,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 1,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 42,
+        "delay_seconds": 0.46999999999999886,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.84,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 46,
+        "delay_seconds": 0.4399999999999977,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8620689655172413,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 47,
+        "delay_seconds": 0.21999999999999886,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 1,
+        "wrong_direction_samples": 1
+      },
+      {
+        "block": 49,
+        "delay_seconds": 0.5099999999999909,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.8214285714285714,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 52,
+        "delay_seconds": 0.21000000000000796,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8620689655172413,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 1,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 53,
+        "delay_seconds": 0.3400000000000034,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.9,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 55,
+        "delay_seconds": 0.3199999999999932,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8636363636363636,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      },
+      {
+        "block": 56,
+        "delay_seconds": 0.3400000000000034,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8125,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 57,
+        "delay_seconds": 0.7199999999999989,
+        "within_deadline": false,
+        "correct_command_occupancy": 0.5882352941176471,
+        "at_least_80_percent_correct_occupancy": false,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 58,
+        "delay_seconds": 0.3100000000000023,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8928571428571429,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 2
+      },
+      {
+        "block": 60,
+        "delay_seconds": 0.2599999999999909,
+        "within_deadline": true,
+        "correct_command_occupancy": 0.8823529411764706,
+        "at_least_80_percent_correct_occupancy": true,
+        "interruptions": 0,
+        "wrong_direction_samples": 0
+      }
+    ],
+    "stops": [
+      {
+        "block": 6,
+        "delay_seconds": 0.22999999999998977,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 9,
+        "delay_seconds": 0.2599999999999909,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 18,
+        "delay_seconds": 0.2599999999999909,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 24,
+        "delay_seconds": 0.25,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 26,
+        "delay_seconds": 0.28000000000000114,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 29,
+        "delay_seconds": 0.19000000000002615,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 31,
+        "delay_seconds": 0.22999999999998977,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 33,
+        "delay_seconds": 0.18999999999999773,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 37,
+        "delay_seconds": 0.28000000000000114,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 41,
+        "delay_seconds": 0.21999999999999886,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 43,
+        "delay_seconds": 0.21999999999999886,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 48,
+        "delay_seconds": 0.2600000000000193,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 50,
+        "delay_seconds": 0.18000000000000682,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 54,
+        "delay_seconds": 0.2599999999999909,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      },
+      {
+        "block": 59,
+        "delay_seconds": 0.18000000000000682,
+        "within_deadline": true,
+        "sustained_zero": true,
+        "timely_sustained_stop": true
+      }
+    ],
+    "movement_episodes": 40,
+    "movement_detected": 40,
+    "deadline_hits": 33,
+    "occupancy_80_hits": 34,
+    "movement_interruptions": 4,
+    "wrong_direction_samples": 20,
+    "median_onset_seconds": 0.29000000000000625,
+    "p95_onset_seconds": 0.5580000000000107,
+    "stop_transitions": 15,
+    "stop_deadline_hits": 15,
+    "timely_sustained_stops": 15,
+    "median_stop_seconds": 0.22999999999998977,
+    "false_rest_events": 15,
+    "rest_occupancy": 0.04990403071017274,
+    "rest_seconds": 52.1,
+    "long_rest_false_events": 0,
+    "long_rest_seconds": 10.100000000000001
+  },
+  "corrected": {
+    "movement_episodes": 40,
+    "movement_detected": 40,
+    "deadline_hits": 38,
+    "false_rest_events": 15,
+    "transition_carryover_events": 15,
+    "new_rest_activation_events": 0,
+    "rest_seconds": 52.25000000000003,
+    "rest_occupancy": 0.04382775119617153,
+    "timely_sustained_stops": 15,
+    "movement": [
+      {
+        "block": 2,
+        "delay_seconds": 0.1599999999999966,
+        "correct_command_occupancy": 0.8987341772151919,
+        "interruptions": 0
+      },
+      {
+        "block": 3,
+        "delay_seconds": 0.37999999999999545,
+        "correct_command_occupancy": 0.8403361344537831,
+        "interruptions": 0
+      },
+      {
+        "block": 4,
+        "delay_seconds": 0.4000000000000057,
+        "correct_command_occupancy": 0.8611111111111096,
+        "interruptions": 0
+      },
+      {
+        "block": 5,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 1.0,
+        "interruptions": 0
+      },
+      {
+        "block": 7,
+        "delay_seconds": 0.15000000000000568,
+        "correct_command_occupancy": 0.9491525423728797,
+        "interruptions": 0
+      },
+      {
+        "block": 8,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 1.0,
+        "interruptions": 0
+      },
+      {
+        "block": 11,
+        "delay_seconds": 0.4000000000000057,
+        "correct_command_occupancy": 0.7565217391304474,
+        "interruptions": 8
+      },
+      {
+        "block": 12,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9145299145299306,
+        "interruptions": 10
+      },
+      {
+        "block": 13,
+        "delay_seconds": 0.4800000000000182,
+        "correct_command_occupancy": 0.7547892720306578,
+        "interruptions": 8
+      },
+      {
+        "block": 14,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9259259259259406,
+        "interruptions": 8
+      },
+      {
+        "block": 15,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.8113207547170102,
+        "interruptions": 6
+      },
+      {
+        "block": 16,
+        "delay_seconds": 0.01999999999998181,
+        "correct_command_occupancy": 0.9018404907975652,
+        "interruptions": 7
+      },
+      {
+        "block": 17,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9245283018868077,
+        "interruptions": 6
+      },
+      {
+        "block": 19,
+        "delay_seconds": 0.4300000000000068,
+        "correct_command_occupancy": 0.7541666666666776,
+        "interruptions": 8
+      },
+      {
+        "block": 20,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9186046511628151,
+        "interruptions": 7
+      },
+      {
+        "block": 21,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9181286549707686,
+        "interruptions": 7
+      },
+      {
+        "block": 22,
+        "delay_seconds": 0.21999999999997044,
+        "correct_command_occupancy": 0.8288288288288564,
+        "interruptions": 8
+      },
+      {
+        "block": 23,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9185520361991041,
+        "interruptions": 9
+      },
+      {
+        "block": 25,
+        "delay_seconds": 0.1599999999999966,
+        "correct_command_occupancy": 0.8709677419354932,
+        "interruptions": 4
+      },
+      {
+        "block": 27,
+        "delay_seconds": 0.4000000000000057,
+        "correct_command_occupancy": 0.7916666666666623,
+        "interruptions": 0
+      },
+      {
+        "block": 28,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 1.0,
+        "interruptions": 0
+      },
+      {
+        "block": 30,
+        "delay_seconds": 0.1599999999999966,
+        "correct_command_occupancy": 0.9064327485380141,
+        "interruptions": 0
+      },
+      {
+        "block": 32,
+        "delay_seconds": 0.4099999999999966,
+        "correct_command_occupancy": 0.7266666666666689,
+        "interruptions": 0
+      },
+      {
+        "block": 34,
+        "delay_seconds": 0.4399999999999977,
+        "correct_command_occupancy": 0.7426900584795304,
+        "interruptions": 0
+      },
+      {
+        "block": 35,
+        "delay_seconds": 0.6299999999999955,
+        "correct_command_occupancy": 0.7878787878787893,
+        "interruptions": 0
+      },
+      {
+        "block": 36,
+        "delay_seconds": 0.2600000000000193,
+        "correct_command_occupancy": 0.852272727272718,
+        "interruptions": 0
+      },
+      {
+        "block": 38,
+        "delay_seconds": 0.21999999999999886,
+        "correct_command_occupancy": 0.8742857142857149,
+        "interruptions": 0
+      },
+      {
+        "block": 39,
+        "delay_seconds": 0.46999999999999886,
+        "correct_command_occupancy": 0.8303249097472934,
+        "interruptions": 0
+      },
+      {
+        "block": 40,
+        "delay_seconds": 0.0,
+        "correct_command_occupancy": 0.9275362318840515,
+        "interruptions": 1
+      },
+      {
+        "block": 42,
+        "delay_seconds": 0.3900000000000148,
+        "correct_command_occupancy": 0.8470588235294066,
+        "interruptions": 0
+      },
+      {
+        "block": 46,
+        "delay_seconds": 0.36000000000001364,
+        "correct_command_occupancy": 0.8767123287671192,
+        "interruptions": 0
+      },
+      {
+        "block": 47,
+        "delay_seconds": 0.13999999999998636,
+        "correct_command_occupancy": 0.8265306122448944,
+        "interruptions": 1
+      },
+      {
+        "block": 49,
+        "delay_seconds": 0.4299999999999784,
+        "correct_command_occupancy": 0.8424908424908498,
+        "interruptions": 0
+      },
+      {
+        "block": 52,
+        "delay_seconds": 0.12999999999999545,
+        "correct_command_occupancy": 0.8850174216027932,
+        "interruptions": 1
+      },
+      {
+        "block": 53,
+        "delay_seconds": 0.2599999999999909,
+        "correct_command_occupancy": 0.9127516778523518,
+        "interruptions": 0
+      },
+      {
+        "block": 55,
+        "delay_seconds": 0.2400000000000091,
+        "correct_command_occupancy": 0.8165137614678487,
+        "interruptions": 8
+      },
+      {
+        "block": 56,
+        "delay_seconds": 0.2599999999999909,
+        "correct_command_occupancy": 0.7654320987654005,
+        "interruptions": 6
+      },
+      {
+        "block": 57,
+        "delay_seconds": 0.6399999999999864,
+        "correct_command_occupancy": 0.5789473684210317,
+        "interruptions": 4
+      },
+      {
+        "block": 58,
+        "delay_seconds": 0.2300000000000182,
+        "correct_command_occupancy": 0.8424908424907994,
+        "interruptions": 10
+      },
+      {
+        "block": 60,
+        "delay_seconds": 0.19999999999998863,
+        "correct_command_occupancy": 0.8181818181817888,
+        "interruptions": 6
+      }
+    ],
+    "initial_active_rest": 0,
+    "missed_episodes": 0,
+    "median_onset_seconds": 0.21999999999998465,
+    "p95_onset_seconds": 0.48750000000001664,
+    "false_rest_events_per_minute": 17.224880382775112,
+    "movement_interruptions": 133
+  },
+  "limitation": "Nonterminal last frame excluded because historical trace lacks an explicit interval endpoint."
+}

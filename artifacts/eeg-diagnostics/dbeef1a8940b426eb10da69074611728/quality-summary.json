@@ -1,0 +1,80 @@
+{
+  "2": {
+    "trials": 45,
+    "flat_trials": 0,
+    "extreme_trials": 4,
+    "flat_channels": {},
+    "extreme_channels": {
+      "Fp1": 2,
+      "AF7": 3,
+      "FC5": 1
+    }
+  },
+  "3": {
+    "trials": 45,
+    "flat_trials": 0,
+    "extreme_trials": 35,
+    "flat_channels": {},
+    "extreme_channels": {
+      "Iz": 4,
+      "Fp1": 30,
+      "Fpz": 28,
+      "Fp2": 34,
+      "AF7": 31,
+      "AF3": 25,
+      "AFz": 17,
+      "AF4": 28,
+      "AF8": 28,
+      "F6": 25,
+      "F8": 19,
+      "TP8": 1,
+      "FC5": 1,
+      "F7": 8,
+      "F5": 7,
+      "F3": 1,
+      "F2": 3,
+      "F4": 4,
+      "PO8": 1,
+      "O1": 2,
+      "PO7": 2,
+      "PO3": 1,
+      "CP6": 1
+    }
+  },
+  "4": {
+    "trials": 45,
+    "flat_trials": 0,
+    "extreme_trials": 45,
+    "flat_channels": {},
+    "extreme_channels": {
+      "FT8": 45,
+      "Fp1": 1,
+      "Fp2": 1,
+      "AF8": 1
+    }
+  },
+  "5": {
+    "trials": 45,
+    "flat_trials": 0,
+    "extreme_trials": 24,
+    "flat_channels": {},
+    "extreme_channels": {
+      "FC5": 16,
+      "Fp1": 4,
+      "AF7": 4,
+      "T10": 1,
+      "TP7": 11,
+      "AF8": 1,
+      "P4": 1
+    }
+  },
+  "6": {
+    "trials": 45,
+    "flat_trials": 0,
+    "extreme_trials": 7,
+    "flat_channels": {},
+    "extreme_channels": {
+      "Fp1": 7
+    }
+  }
+}

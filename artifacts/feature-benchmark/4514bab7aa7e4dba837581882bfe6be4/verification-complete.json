@@ -1,0 +1,3742 @@
+{
+  "tolerance": 1e-06,
+  "threads": 2,
+  "warmup": 3,
+  "repeats": 10,
+  "hardware": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "torch": "2.14.1+cpu",
+    "device": "CPU"
+  },
+  "timing_note": "Batch wall times; source cold cache once per participant, warm cache 3 repeats; model excludes feature extraction but includes normalization/tensor conversion. Full source-through-prediction measured three times with empty processed cache; OS file cache uncontrolled. Offline batch duration, not live latency.",
+  "sources": {
+    "2": {
+      "cold_source_preprocessing_seconds": 0.12990390000004481,
+      "warm_cache_load": {
+        "median_seconds": 0.03207590000010896,
+        "p95_seconds": 0.03208337000010033
+      },
+      "cold_repeats": 1
+    },
+    "3": {
+      "cold_source_preprocessing_seconds": 0.09702710000010484,
+      "warm_cache_load": {
+        "median_seconds": 0.03245839999999589,
+        "p95_seconds": 0.032563609999760955
+      },
+      "cold_repeats": 1
+    },
+    "4": {
+      "cold_source_preprocessing_seconds": 0.09860249999974258,
+      "warm_cache_load": {
+        "median_seconds": 0.03219179999996413,
+        "p95_seconds": 0.032263260000172524
+      },
+      "cold_repeats": 1
+    },
+    "5": {
+      "cold_source_preprocessing_seconds": 0.09606490000032863,
+      "warm_cache_load": {
+        "median_seconds": 0.03289249999988897,
+        "p95_seconds": 0.03292732999989312
+      },
+      "cold_repeats": 1
+    },
+    "6": {
+      "cold_source_preprocessing_seconds": 0.09639359999982844,
+      "warm_cache_load": {
+        "median_seconds": 0.03239239999993515,
+        "p95_seconds": 0.032609929999989615
+      },
+      "cold_repeats": 1
+    }
+  },
+  "results": [
+    {
+      "subject": 2,
+      "representation": "time",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.7857142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.7272727272727273,
+          "recall": 1.0,
+          "f1-score": 0.8421052631578947,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.7272727272727273,
+          "support": 7.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.8636363636363636,
+          "recall": 0.7857142857142857,
+          "f1-score": 0.784688995215311,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.8545454545454546,
+          "recall": 0.8,
+          "f1-score": 0.7885167464114832,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          8,
+          0
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "predicted_counts": [
+        11,
+        4
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008563550000189935,
+        "p95_seconds": 0.008603865000191035
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008489900000085981,
+        "p95_seconds": 0.008586259999788126
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10575010000002294,
+        "p95_seconds": 0.10586322999993172,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "time",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.7321428571428572,
+      "classification": {
+        "0": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.7142857142857143,
+          "support": 7.0
+        },
+        "accuracy": 0.7333333333333333,
+        "macro avg": {
+          "precision": 0.7321428571428572,
+          "recall": 0.7321428571428572,
+          "f1-score": 0.7321428571428572,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7333333333333333,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.7333333333333333,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        8,
+        7
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008570049999889306,
+        "p95_seconds": 0.008689704999824244
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00849265000010746,
+        "p95_seconds": 0.00853692000000592
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10506859999986773,
+        "p95_seconds": 0.10525327999985165,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "time",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.7321428571428572,
+      "classification": {
+        "0": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.7142857142857143,
+          "support": 7.0
+        },
+        "accuracy": 0.7333333333333333,
+        "macro avg": {
+          "precision": 0.7321428571428572,
+          "recall": 0.7321428571428572,
+          "f1-score": 0.7321428571428572,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7333333333333333,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.7333333333333333,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        8,
+        7
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008498850000023594,
+        "p95_seconds": 0.00864030499983528
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00846510000019407,
+        "p95_seconds": 0.008494465000035234
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.1054575999996814,
+        "p95_seconds": 0.10673019999994722,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.4107142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.4,
+          "recall": 0.25,
+          "f1-score": 0.3076923076923077,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.4,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.47058823529411764,
+          "support": 7.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.4,
+          "recall": 0.4107142857142857,
+          "f1-score": 0.3891402714932127,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1-score": 0.38371040723981903,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "predicted_counts": [
+        5,
+        10
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008225649999985762,
+        "p95_seconds": 0.008252070000071398
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.195000009436626e-05,
+        "p95_seconds": 8.50049999598923e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10507380000035482,
+        "p95_seconds": 0.10542426000006344,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5625,
+      "classification": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.125,
+          "f1-score": 0.2222222222222222,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.75,
+          "recall": 0.5625,
+          "f1-score": 0.4444444444444444,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7666666666666667,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.4296296296296296,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          1,
+          7
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        1,
+        14
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008220749999964028,
+        "p95_seconds": 0.00827046999979757
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.129999991979275e-05,
+        "p95_seconds": 8.428499986621319e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10578129999976227,
+        "p95_seconds": 0.10648257999987436,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.6875,
+      "classification": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.375,
+          "f1-score": 0.5454545454545454,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5833333333333334,
+          "recall": 1.0,
+          "f1-score": 0.7368421052631579,
+          "support": 7.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.7916666666666667,
+          "recall": 0.6875,
+          "f1-score": 0.6411483253588517,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.8055555555555556,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.634768740031898,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        3,
+        12
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.00823209999998653,
+        "p95_seconds": 0.008339579999869784
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.21500000256492e-05,
+        "p95_seconds": 8.471500018458755e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10571110000000772,
+        "p95_seconds": 0.10575933999980407,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "bandpower",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.625,
+      "classification": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5384615384615384,
+          "recall": 1.0,
+          "f1-score": 0.7,
+          "support": 7.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.7692307692307692,
+          "recall": 0.625,
+          "f1-score": 0.55,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7846153846153847,
+          "recall": 0.6,
+          "f1-score": 0.5399999999999999,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.00836154999979044,
+        "p95_seconds": 0.008460335000063424
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00023670000018682913,
+        "p95_seconds": 0.00027042999970490196
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10623600000008082,
+        "p95_seconds": 0.10751580000032845,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.8035714285714286,
+      "classification": {
+        "0": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1-score": 0.8,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.8,
+          "support": 7.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.8035714285714286,
+          "recall": 0.8035714285714286,
+          "f1-score": 0.8,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.8071428571428572,
+          "recall": 0.8,
+          "f1-score": 0.8,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "predicted_counts": [
+        7,
+        8
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.001441150000118796,
+        "p95_seconds": 0.0014720649999844682
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.139999979699496e-05,
+        "p95_seconds": 7.295500001873734e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09749230000034004,
+        "p95_seconds": 0.09958443999998963,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.6071428571428572,
+      "classification": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.5714285714285714,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5555555555555556,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.625,
+          "support": 7.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.6111111111111112,
+          "recall": 0.6071428571428572,
+          "f1-score": 0.5982142857142857,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6148148148148148,
+          "recall": 0.6,
+          "f1-score": 0.5964285714285714,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        6,
+        9
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0014013499999236956,
+        "p95_seconds": 0.0014544500000511107
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.185000004028552e-05,
+        "p95_seconds": 9.964999987914775e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09812789999978122,
+        "p95_seconds": 0.0984554099999059,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.7946428571428572,
+      "classification": {
+        "0": {
+          "precision": 0.7777777777777778,
+          "recall": 0.875,
+          "f1-score": 0.8235294117647058,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.7692307692307693,
+          "support": 7.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.8055555555555556,
+          "recall": 0.7946428571428572,
+          "f1-score": 0.7963800904977376,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.8037037037037038,
+          "recall": 0.8,
+          "f1-score": 0.7981900452488688,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        9,
+        6
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0014005500001985638,
+        "p95_seconds": 0.0014383799997176538
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.155000002967427e-05,
+        "p95_seconds": 7.315000002563465e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09860230000003867,
+        "p95_seconds": 0.0986192200003643,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 2,
+      "representation": "csp",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.6517857142857143,
+      "classification": {
+        "0": {
+          "precision": 0.6363636363636364,
+          "recall": 0.875,
+          "f1-score": 0.7368421052631579,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.75,
+          "recall": 0.42857142857142855,
+          "f1-score": 0.5454545454545454,
+          "support": 7.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.6931818181818181,
+          "recall": 0.6517857142857143,
+          "f1-score": 0.6411483253588517,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6893939393939393,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6475279106858054,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "predicted_counts": [
+        11,
+        4
+      ],
+      "trials": 15,
+      "coverage": 0.8666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0015323499999340129,
+        "p95_seconds": 0.0015735100000256353
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00021774999981971632,
+        "p95_seconds": 0.0002197049999722367
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09941320000007181,
+        "p95_seconds": 0.0996296499996788,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "time",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5446428571428572,
+      "classification": {
+        "0": {
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1-score": 0.46153846153846156,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.5882352941176471,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.55,
+          "recall": 0.5446428571428572,
+          "f1-score": 0.5248868778280543,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5533333333333333,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.5206636500754148,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        5,
+        10
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008652750000010201,
+        "p95_seconds": 0.008708829999977751
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008486899999979869,
+        "p95_seconds": 0.008537794999801918
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10583269999960976,
+        "p95_seconds": 0.1063276099999257,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "time",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.48214285714285715,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1-score": 0.3333333333333333,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.45454545454545453,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.5555555555555556,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.4772727272727273,
+          "recall": 0.48214285714285715,
+          "f1-score": 0.4444444444444444,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.47878787878787876,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.437037037037037,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        4,
+        11
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008578649999890331,
+        "p95_seconds": 0.008623275000172726
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008433250000052794,
+        "p95_seconds": 0.008491285000172866
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10656150000022535,
+        "p95_seconds": 0.10791564000010112,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "time",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.41964285714285715,
+      "classification": {
+        "0": {
+          "precision": 0.3333333333333333,
+          "recall": 0.125,
+          "f1-score": 0.18181818181818182,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.4166666666666667,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.5263157894736842,
+          "support": 7.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.375,
+          "recall": 0.41964285714285715,
+          "f1-score": 0.354066985645933,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.3722222222222223,
+          "recall": 0.4,
+          "f1-score": 0.34258373205741627,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        3,
+        12
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008547849999786195,
+        "p95_seconds": 0.00856888500009063
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008480500000132452,
+        "p95_seconds": 0.00850915500013798
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10629019999987577,
+        "p95_seconds": 0.1069065200001205,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5089285714285714,
+      "classification": {
+        "0": {
+          "precision": 0.5384615384615384,
+          "recall": 0.875,
+          "f1-score": 0.6666666666666666,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.2222222222222222,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5192307692307692,
+          "recall": 0.5089285714285714,
+          "f1-score": 0.4444444444444444,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5205128205128206,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.4592592592592592,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "predicted_counts": [
+        13,
+        2
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008128650000116977,
+        "p95_seconds": 0.00830906500011679
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.090000005722686e-05,
+        "p95_seconds": 8.339500006968593e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10607090000030439,
+        "p95_seconds": 0.1062816800001201,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.35714285714285715,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.38461538461538464,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.5,
+          "support": 7.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.19230769230769232,
+          "recall": 0.35714285714285715,
+          "f1-score": 0.25,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.1794871794871795,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.23333333333333334,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008057750000034503,
+        "p95_seconds": 0.00827988499993353
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.289999982480367e-05,
+        "p95_seconds": 8.476000011796714e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10520050000013725,
+        "p95_seconds": 0.10660278999994262,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.39285714285714285,
+      "classification": {
+        "0": {
+          "precision": 0.4444444444444444,
+          "recall": 0.5,
+          "f1-score": 0.47058823529411764,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.3076923076923077,
+          "support": 7.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.38888888888888884,
+          "recall": 0.39285714285714285,
+          "f1-score": 0.3891402714932127,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.39259259259259255,
+          "recall": 0.4,
+          "f1-score": 0.3945701357466064,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "predicted_counts": [
+        9,
+        6
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.00818570000001273,
+        "p95_seconds": 0.00834521999986464
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.20499999463209e-05,
+        "p95_seconds": 8.476499981497909e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10536469999988185,
+        "p95_seconds": 0.10566431000038393,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "bandpower",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5803571428571428,
+      "classification": {
+        "0": {
+          "precision": 0.5833333333333334,
+          "recall": 0.875,
+          "f1-score": 0.7,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.4,
+          "support": 7.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.625,
+          "recall": 0.5803571428571428,
+          "f1-score": 0.55,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6222222222222221,
+          "recall": 0.6,
+          "f1-score": 0.56,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "predicted_counts": [
+        12,
+        3
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008298350000359278,
+        "p95_seconds": 0.0084717700000283
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00023090000013326062,
+        "p95_seconds": 0.0002624250003464112
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10558039999978064,
+        "p95_seconds": 0.10574438000012379,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.49107142857142855,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.125,
+          "f1-score": 0.2,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.46153846153846156,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.6,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.4807692307692308,
+          "recall": 0.49107142857142855,
+          "f1-score": 0.4,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.48205128205128206,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.3866666666666667,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0014169000000947563,
+        "p95_seconds": 0.0015019799998754024
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.159999995565158e-05,
+        "p95_seconds": 7.27300001472031e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09810950000019147,
+        "p95_seconds": 0.0986406800000168,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.35714285714285715,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.38461538461538464,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.5,
+          "support": 7.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.19230769230769232,
+          "recall": 0.35714285714285715,
+          "f1-score": 0.25,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.1794871794871795,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.23333333333333334,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0014118000001417386,
+        "p95_seconds": 0.0014441450000049372
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.16499998816289e-05,
+        "p95_seconds": 7.36200001938414e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.0979154000001472,
+        "p95_seconds": 0.10261573999996472,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.35714285714285715,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.38461538461538464,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.5,
+          "support": 7.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.19230769230769232,
+          "recall": 0.35714285714285715,
+          "f1-score": 0.25,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.1794871794871795,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.23333333333333334,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0014355000000705331,
+        "p95_seconds": 0.0015319999997927879
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.100000016180275e-05,
+        "p95_seconds": 7.300999993731239e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09832120000010036,
+        "p95_seconds": 0.09833604999980708,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 3,
+      "representation": "csp",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.6160714285714286,
+      "classification": {
+        "0": {
+          "precision": 0.75,
+          "recall": 0.375,
+          "f1-score": 0.5,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5454545454545454,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.6666666666666666,
+          "support": 7.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.6477272727272727,
+          "recall": 0.6160714285714286,
+          "f1-score": 0.5833333333333333,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6545454545454545,
+          "recall": 0.6,
+          "f1-score": 0.5777777777777777,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "predicted_counts": [
+        4,
+        11
+      ],
+      "trials": 15,
+      "coverage": 0.06666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0015387000000828266,
+        "p95_seconds": 0.0015832050000881281
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.0002155499998934829,
+        "p95_seconds": 0.0002190149998796187
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09881910000012795,
+        "p95_seconds": 0.09913266000003204,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "time",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.4666666666666667,
+          "recall": 1.0,
+          "f1-score": 0.6363636363636364,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.23333333333333334,
+          "recall": 0.5,
+          "f1-score": 0.3181818181818182,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.21777777777777776,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.29696969696969694,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        0,
+        15
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.008552450000252065,
+        "p95_seconds": 0.008583290000001399
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008450349999975515,
+        "p95_seconds": 0.008494144999872333
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10633929999994507,
+        "p95_seconds": 0.10696119999970506,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "time",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5178571428571428,
+      "classification": {
+        "0": {
+          "precision": 0.5454545454545454,
+          "recall": 0.75,
+          "f1-score": 0.631578947368421,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.36363636363636365,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5227272727272727,
+          "recall": 0.5178571428571428,
+          "f1-score": 0.49760765550239233,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5242424242424242,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.5065390749601275,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "predicted_counts": [
+        11,
+        4
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.008561350000036327,
+        "p95_seconds": 0.008610754999881464
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.0084870499997578,
+        "p95_seconds": 0.008538065000016104
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10523620000003575,
+        "p95_seconds": 0.1063073800001348,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "time",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5714285714285714,
+      "classification": {
+        "0": {
+          "precision": 0.5714285714285714,
+          "recall": 1.0,
+          "f1-score": 0.7272727272727273,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.25,
+          "support": 7.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.7857142857142857,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.48863636363636365,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7714285714285715,
+          "recall": 0.6,
+          "f1-score": 0.5045454545454545,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          8,
+          0
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "predicted_counts": [
+        14,
+        1
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.008535449999953926,
+        "p95_seconds": 0.008597649999887835
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008467899999914152,
+        "p95_seconds": 0.008523374999913357
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10786850000022241,
+        "p95_seconds": 0.11004937999987305,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.6785714285714286,
+      "classification": {
+        "0": {
+          "precision": 0.8,
+          "recall": 0.5,
+          "f1-score": 0.6153846153846154,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.6,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.7058823529411765,
+          "support": 7.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.7,
+          "recall": 0.6785714285714286,
+          "f1-score": 0.660633484162896,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7066666666666668,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6576168929110106,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          4
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "predicted_counts": [
+        5,
+        10
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.008502300000145624,
+        "p95_seconds": 0.008899319999659382
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.289999982480367e-05,
+        "p95_seconds": 0.00011548499996933964
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10611270000026707,
+        "p95_seconds": 0.11113262999965627,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.4666666666666667,
+          "recall": 1.0,
+          "f1-score": 0.6363636363636364,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.23333333333333334,
+          "recall": 0.5,
+          "f1-score": 0.3181818181818182,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.21777777777777776,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.29696969696969694,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        0,
+        15
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.008270850000144492,
+        "p95_seconds": 0.008321159999854898
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.249999996223778e-05,
+        "p95_seconds": 8.60600000123668e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10640329999978348,
+        "p95_seconds": 0.10679534000014428,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.4666666666666667,
+          "recall": 1.0,
+          "f1-score": 0.6363636363636364,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.23333333333333334,
+          "recall": 0.5,
+          "f1-score": 0.3181818181818182,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.21777777777777776,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.29696969696969694,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        0,
+        15
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.008096850000129052,
+        "p95_seconds": 0.008336325000254875
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.14999998510757e-05,
+        "p95_seconds": 8.4335000133251e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.105956000000333,
+        "p95_seconds": 0.1068974000002072,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "bandpower",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5357142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5,
+          "f1-score": 0.5333333333333333,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5333333333333333,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5357142857142857,
+          "recall": 0.5357142857142857,
+          "f1-score": 0.5333333333333333,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5380952380952381,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.5333333333333333,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "predicted_counts": [
+        7,
+        8
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.00837874999979249,
+        "p95_seconds": 0.008540135000089322
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00023485000019718427,
+        "p95_seconds": 0.00024104000010538584
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10640120000016395,
+        "p95_seconds": 0.10714874000013878,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.49107142857142855,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.125,
+          "f1-score": 0.2,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.46153846153846156,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.6,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.4807692307692308,
+          "recall": 0.49107142857142855,
+          "f1-score": 0.4,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.48205128205128206,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.3866666666666667,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.0014307000001281267,
+        "p95_seconds": 0.0014681349999136728
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.149999987632327e-05,
+        "p95_seconds": 7.26049999229872e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09916960000009567,
+        "p95_seconds": 0.09926077000018267,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.4666666666666667,
+          "recall": 1.0,
+          "f1-score": 0.6363636363636364,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.23333333333333334,
+          "recall": 0.5,
+          "f1-score": 0.3181818181818182,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.21777777777777776,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.29696969696969694,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        0,
+        15
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.001365099999929953,
+        "p95_seconds": 0.001394750000008571
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.1300000172414e-05,
+        "p95_seconds": 7.346000002144138e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09908679999989545,
+        "p95_seconds": 0.0990868899997622,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.3482142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.25,
+          "recall": 0.125,
+          "f1-score": 0.16666666666666666,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.36363636363636365,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.4444444444444444,
+          "support": 7.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.3068181818181818,
+          "recall": 0.3482142857142857,
+          "f1-score": 0.3055555555555555,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.303030303030303,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.2962962962962962,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "predicted_counts": [
+        4,
+        11
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.0014380000000073778,
+        "p95_seconds": 0.0014891150001631103
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.154999980230059e-05,
+        "p95_seconds": 7.351999988713942e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09984600000007049,
+        "p95_seconds": 0.10029609000002893,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 4,
+      "representation": "csp",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.20535714285714285,
+      "classification": {
+        "0": {
+          "precision": 0.16666666666666666,
+          "recall": 0.125,
+          "f1-score": 0.14285714285714285,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.2222222222222222,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.25,
+          "support": 7.0
+        },
+        "accuracy": 0.2,
+        "macro avg": {
+          "precision": 0.19444444444444442,
+          "recall": 0.20535714285714285,
+          "f1-score": 0.19642857142857142,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.19259259259259257,
+          "recall": 0.2,
+          "f1-score": 0.19285714285714287,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          1,
+          7
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "predicted_counts": [
+        6,
+        9
+      ],
+      "trials": 15,
+      "coverage": 0.0,
+      "features_and_model": {
+        "median_seconds": 0.0015414499998769315,
+        "p95_seconds": 0.0016055049999522451
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00021629999992001103,
+        "p95_seconds": 0.0002190850000715727
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09919170000011945,
+        "p95_seconds": 0.09948302999978295,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "time",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5803571428571428,
+      "classification": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.4,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.5833333333333334,
+          "recall": 0.875,
+          "f1-score": 0.7,
+          "support": 8.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.625,
+          "recall": 0.5803571428571428,
+          "f1-score": 0.55,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6222222222222221,
+          "recall": 0.6,
+          "f1-score": 0.56,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        3,
+        12
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008547750000161614,
+        "p95_seconds": 0.008570090000239361
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00847010000006776,
+        "p95_seconds": 0.008484750000116037
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10475730000007388,
+        "p95_seconds": 0.10543734000011681,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "time",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5803571428571428,
+      "classification": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.4,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.5833333333333334,
+          "recall": 0.875,
+          "f1-score": 0.7,
+          "support": 8.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.625,
+          "recall": 0.5803571428571428,
+          "f1-score": 0.55,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6222222222222221,
+          "recall": 0.6,
+          "f1-score": 0.56,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        3,
+        12
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008508549999987736,
+        "p95_seconds": 0.008574220000173226
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008439949999910823,
+        "p95_seconds": 0.008510780000233354
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10606669999970109,
+        "p95_seconds": 0.10663270999993983,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "time",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5803571428571428,
+      "classification": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.4,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.5833333333333334,
+          "recall": 0.875,
+          "f1-score": 0.7,
+          "support": 8.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.625,
+          "recall": 0.5803571428571428,
+          "f1-score": 0.55,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6222222222222221,
+          "recall": 0.6,
+          "f1-score": 0.56,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "predicted_counts": [
+        3,
+        12
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008534499999996115,
+        "p95_seconds": 0.008562359999950786
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00848560000008547,
+        "p95_seconds": 0.008499200000119344
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10520740000038131,
+        "p95_seconds": 0.10541178999983458,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5982142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5714285714285714,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.625,
+          "recall": 0.625,
+          "f1-score": 0.625,
+          "support": 8.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.5982142857142857,
+          "recall": 0.5982142857142857,
+          "f1-score": 0.5982142857142857,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1-score": 0.6,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        7,
+        8
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008086950000006254,
+        "p95_seconds": 0.008305079999945519
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.105000006253249e-05,
+        "p95_seconds": 8.40049998714676e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.1050638000001527,
+        "p95_seconds": 0.10574834000008196,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5267857142857143,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.42857142857142855,
+          "f1-score": 0.46153846153846156,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.5555555555555556,
+          "recall": 0.625,
+          "f1-score": 0.5882352941176471,
+          "support": 8.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5277777777777778,
+          "recall": 0.5267857142857143,
+          "f1-score": 0.5248868778280543,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5296296296296297,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.5291101055806938,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        6,
+        9
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008252499999798601,
+        "p95_seconds": 0.00831302000017331
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.200000024771725e-05,
+        "p95_seconds": 8.483500005240785e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10543369999959395,
+        "p95_seconds": 0.10670774000018354,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.6428571428571428,
+      "classification": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.4444444444444444,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.6153846153846154,
+          "recall": 1.0,
+          "f1-score": 0.7619047619047619,
+          "support": 8.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.8076923076923077,
+          "recall": 0.6428571428571428,
+          "f1-score": 0.6031746031746031,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7948717948717949,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6137566137566137,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "predicted_counts": [
+        2,
+        13
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008026400000289868,
+        "p95_seconds": 0.008385945000031824
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.275000004687172e-05,
+        "p95_seconds": 8.451999972294288e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10560050000003685,
+        "p95_seconds": 0.10580281999968974,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "bandpower",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5357142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5333333333333333,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5,
+          "f1-score": 0.5333333333333333,
+          "support": 8.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5357142857142857,
+          "recall": 0.5357142857142857,
+          "f1-score": 0.5333333333333333,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5380952380952381,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.5333333333333333,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "predicted_counts": [
+        8,
+        7
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.008184200000187047,
+        "p95_seconds": 0.008460759999979927
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.0002312999999958265,
+        "p95_seconds": 0.00023617000015292434
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10482079999974303,
+        "p95_seconds": 0.10569659000016145,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.4107142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.4,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.47058823529411764,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.4,
+          "recall": 0.25,
+          "f1-score": 0.3076923076923077,
+          "support": 8.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.4,
+          "recall": 0.4107142857142857,
+          "f1-score": 0.3891402714932127,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1-score": 0.38371040723981903,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "predicted_counts": [
+        10,
+        5
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0013944000002084067,
+        "p95_seconds": 0.0014317699999764953
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.089999985510076e-05,
+        "p95_seconds": 7.282000001396227e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09850879999976314,
+        "p95_seconds": 0.09906472999978178,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5982142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5714285714285714,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.625,
+          "recall": 0.625,
+          "f1-score": 0.625,
+          "support": 8.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.5982142857142857,
+          "recall": 0.5982142857142857,
+          "f1-score": 0.5982142857142857,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1-score": 0.6,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "predicted_counts": [
+        7,
+        8
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.0014145999998618208,
+        "p95_seconds": 0.001518944999997984
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.150000010369695e-05,
+        "p95_seconds": 7.285499991667166e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09831269999995129,
+        "p95_seconds": 0.09857261999986804,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.39285714285714285,
+      "classification": {
+        "0": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.3076923076923077,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.4444444444444444,
+          "recall": 0.5,
+          "f1-score": 0.47058823529411764,
+          "support": 8.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.38888888888888884,
+          "recall": 0.39285714285714285,
+          "f1-score": 0.3891402714932127,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.39259259259259255,
+          "recall": 0.4,
+          "f1-score": 0.3945701357466064,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "predicted_counts": [
+        6,
+        9
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.001434699999890654,
+        "p95_seconds": 0.0014898000000812318
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.094999978107808e-05,
+        "p95_seconds": 7.295000007161434e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09898059999977704,
+        "p95_seconds": 0.09911712999983138,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 5,
+      "representation": "csp",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.4732142857142857,
+      "classification": {
+        "0": {
+          "precision": 0.4444444444444444,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5,
+          "support": 7.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.375,
+          "f1-score": 0.42857142857142855,
+          "support": 8.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.4722222222222222,
+          "recall": 0.4732142857142857,
+          "f1-score": 0.4642857142857143,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.47407407407407404,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.46190476190476193,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "predicted_counts": [
+        9,
+        6
+      ],
+      "trials": 15,
+      "coverage": 0.4666666666666667,
+      "features_and_model": {
+        "median_seconds": 0.001518750000059299,
+        "p95_seconds": 0.0015730699999949138
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.0002171999999518448,
+        "p95_seconds": 0.00022021499987658899
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09813789999998335,
+        "p95_seconds": 0.09938340999983666,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "time",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5178571428571428,
+      "classification": {
+        "0": {
+          "precision": 0.5454545454545454,
+          "recall": 0.75,
+          "f1-score": 0.631578947368421,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.36363636363636365,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5227272727272727,
+          "recall": 0.5178571428571428,
+          "f1-score": 0.49760765550239233,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5242424242424242,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.5065390749601275,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "predicted_counts": [
+        11,
+        4
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.008522650000259091,
+        "p95_seconds": 0.008594984999922417
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008427349999919898,
+        "p95_seconds": 0.008451010000067071
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10546159999967131,
+        "p95_seconds": 0.10848767000002227,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "time",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.4464285714285714,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1-score": 0.6,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.3333333333333333,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.2,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.41666666666666663,
+          "recall": 0.4464285714285714,
+          "f1-score": 0.4,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.4222222222222222,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.41333333333333333,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "predicted_counts": [
+        12,
+        3
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.008579249999911553,
+        "p95_seconds": 0.009261020000076312
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00847404999990431,
+        "p95_seconds": 0.008500485000081427
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10492659999999887,
+        "p95_seconds": 0.10533150999972349,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "time",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.5333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.6956521739130435,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.26666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.34782608695652173,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.28444444444444444,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.3710144927536232,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          8,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "predicted_counts": [
+        15,
+        0
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.008592549999775656,
+        "p95_seconds": 0.00867999000013242
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.008477450000100362,
+        "p95_seconds": 0.008621924999943076
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10571350000009261,
+        "p95_seconds": 0.10671294999997372,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.4375,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.875,
+          "f1-score": 0.6363636363636364,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.25,
+          "recall": 0.4375,
+          "f1-score": 0.3181818181818182,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.26666666666666666,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.3393939393939394,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "predicted_counts": [
+        14,
+        1
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.008241450000014083,
+        "p95_seconds": 0.00834288500002458
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.045000004130998e-05,
+        "p95_seconds": 8.263499987606337e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10481010000012247,
+        "p95_seconds": 0.10485968999996657,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.375,
+      "classification": {
+        "0": {
+          "precision": 0.46153846153846156,
+          "recall": 0.75,
+          "f1-score": 0.5714285714285714,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.23076923076923078,
+          "recall": 0.375,
+          "f1-score": 0.2857142857142857,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.24615384615384617,
+          "recall": 0.4,
+          "f1-score": 0.30476190476190473,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "predicted_counts": [
+        13,
+        2
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.008245000000215441,
+        "p95_seconds": 0.008450495000033698
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.020000018404971e-05,
+        "p95_seconds": 8.327000005010632e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10510340000018914,
+        "p95_seconds": 0.10552955000039219,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "bandpower",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5089285714285714,
+      "classification": {
+        "0": {
+          "precision": 0.5384615384615384,
+          "recall": 0.875,
+          "f1-score": 0.6666666666666666,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.2222222222222222,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5192307692307692,
+          "recall": 0.5089285714285714,
+          "f1-score": 0.4444444444444444,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5205128205128206,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.4592592592592592,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "predicted_counts": [
+        13,
+        2
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.00826399999982641,
+        "p95_seconds": 0.00834587999984251
+      },
+      "model_with_normalization": {
+        "median_seconds": 8.000000025276677e-05,
+        "p95_seconds": 8.299499995700899e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10548199999993813,
+        "p95_seconds": 0.10549702999978763,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "bandpower",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5892857142857143,
+      "classification": {
+        "0": {
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1-score": 0.6666666666666666,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.6,
+          "recall": 0.42857142857142855,
+          "f1-score": 0.5,
+          "support": 7.0
+        },
+        "accuracy": 0.6,
+        "macro avg": {
+          "precision": 0.6,
+          "recall": 0.5892857142857143,
+          "f1-score": 0.5833333333333333,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1-score": 0.5888888888888888,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          6,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "predicted_counts": [
+        10,
+        5
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.008259850000058577,
+        "p95_seconds": 0.008445190000043113
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.0002338500000860222,
+        "p95_seconds": 0.00023964999995769177
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.10678959999995641,
+        "p95_seconds": 0.10696707999995851,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 101,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.4375,
+      "classification": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.875,
+          "f1-score": 0.6363636363636364,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "accuracy": 0.4666666666666667,
+        "macro avg": {
+          "precision": 0.25,
+          "recall": 0.4375,
+          "f1-score": 0.3181818181818182,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.26666666666666666,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.3393939393939394,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "predicted_counts": [
+        14,
+        1
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.001421499999878506,
+        "p95_seconds": 0.0014648999999963051
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.129999994504033e-05,
+        "p95_seconds": 7.34849999389553e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09751419999975042,
+        "p95_seconds": 0.0987159699996937,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 202,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5089285714285714,
+      "classification": {
+        "0": {
+          "precision": 0.5384615384615384,
+          "recall": 0.875,
+          "f1-score": 0.6666666666666666,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.2222222222222222,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5192307692307692,
+          "recall": 0.5089285714285714,
+          "f1-score": 0.4444444444444444,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5205128205128206,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.4592592592592592,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "predicted_counts": [
+        13,
+        2
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.0014215000001058797,
+        "p95_seconds": 0.0014550800001416064
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.1300000172414e-05,
+        "p95_seconds": 7.313999979032814e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.0984336000001349,
+        "p95_seconds": 0.09945185999999921,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "csp",
+      "method": "neural",
+      "seed": 303,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.5333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.6956521739130435,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.26666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.34782608695652173,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.28444444444444444,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.3710144927536232,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          8,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "predicted_counts": [
+        15,
+        0
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.0014154499999676773,
+        "p95_seconds": 0.0014599900000121123
+      },
+      "model_with_normalization": {
+        "median_seconds": 7.100000016180275e-05,
+        "p95_seconds": 7.297499978449195e-05
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.0983171000002585,
+        "p95_seconds": 0.09832520000013574,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    },
+    {
+      "subject": 6,
+      "representation": "csp",
+      "method": "lda",
+      "seed": 0,
+      "max_probability_error": 0.0,
+      "balanced_accuracy": 0.5,
+      "classification": {
+        "0": {
+          "precision": 0.5333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.6956521739130435,
+          "support": 8.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.26666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.34782608695652173,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.28444444444444444,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.3710144927536232,
+          "support": 15.0
+        }
+      },
+      "confusion": [
+        [
+          8,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "predicted_counts": [
+        15,
+        0
+      ],
+      "trials": 15,
+      "coverage": 0.8,
+      "features_and_model": {
+        "median_seconds": 0.0015066000000842905,
+        "p95_seconds": 0.001590085000111685
+      },
+      "model_with_normalization": {
+        "median_seconds": 0.00021479999986695475,
+        "p95_seconds": 0.00021903499985000962
+      },
+      "source_through_prediction": {
+        "median_seconds": 0.09800670000004175,
+        "p95_seconds": 0.09847064999994473,
+        "repeats": 3,
+        "processed_cache": "empty on every repeat",
+        "filesystem_cache": "uncontrolled"
+      },
+      "normalization_training_audit": "passed"
+    }
+  ]
+}

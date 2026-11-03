@@ -1,0 +1,12 @@
+{
+  "means": {
+    "median_absolute_z": 0.49821263551712036,
+    "p99_absolute_z": 3.267868995666504,
+    "fraction_abs_z_over_5": 0.0
+  },
+  "standard_deviations": {
+    "median_absolute_z": 0.5577476024627686,
+    "p99_absolute_z": 6.1439666748046875,
+    "fraction_abs_z_over_5": 0.019739763744559907
+  }
+}

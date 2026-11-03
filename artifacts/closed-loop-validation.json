@@ -1,0 +1,194 @@
+{
+  "protocol": {
+    "target_seconds": 12.0,
+    "rest_seconds": 12.0,
+    "tolerance_rad": 0.2,
+    "settle_seconds": 1.0,
+    "fall_height_m": 0.065,
+    "fall_up_z": 0.45,
+    "ttl_seconds": 0.25,
+    "sensory_deadband_rad": 0.1,
+    "sensory_scale_rad": 0.65,
+    "targets_rad": [
+      1.0,
+      -0.9,
+      0.65
+    ]
+  },
+  "calibration": {
+    "direct": {
+      "alpha": 10.0,
+      "validation_drive_mse": 0.03264054559204402,
+      "validation_rate_mse": null
+    },
+    "neurons": {
+      "alpha": 1.0,
+      "validation_drive_mse": 0.03360926219072283,
+      "validation_rate_mse": 0.0009351742000099681
+    },
+    "populations": {
+      "alpha": 100.0,
+      "validation_drive_mse": 0.035800994173480184,
+      "validation_rate_mse": 0.0014259446131325484
+    },
+    "constant": {
+      "alpha": 0.1,
+      "validation_drive_mse": 0.3308103103239582,
+      "validation_rate_mse": 0.08259623685627744
+    }
+  },
+  "runs": {
+    "direct": {
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.18,
+          "overshoot_rad": 0.022409865225495373,
+          "final_error_rad": -0.009579120187370284
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.1325286735808856,
+          "final_error_rad": 0.09792579060004614
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.62,
+          "overshoot_rad": 0.04354927251990359,
+          "final_error_rad": 0.006703976245034159
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.05505411871597977,
+      "observation_to_command_seconds_mean": 0.20046705070149157,
+      "observation_to_command_seconds_max": 0.2143220000027215,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.2131322999994154
+    },
+    "neurons": {
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.07104324747113866,
+          "final_error_rad": -0.04094385599093764
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.54,
+          "overshoot_rad": 0.09321205695053736,
+          "final_error_rad": 0.05846171078965067
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.52,
+          "overshoot_rad": 0.0472982457733232,
+          "final_error_rad": 9.10245580115765e-05
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.00021942508653857338,
+      "constant_reconstruction_mse": 0.054808006315779506,
+      "observation_to_command_seconds_mean": 0.2006613392783818,
+      "observation_to_command_seconds_max": 0.21075490000221198,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.3045434999949066
+    },
+    "populations": {
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.041521802423004184,
+          "final_error_rad": -0.0039639023437822996
+        },
+        {
+          "target_rad": -0.9,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.08341934314153365,
+          "final_error_rad": 0.059167281239211784
+        },
+        {
+          "target_rad": 0.65,
+          "success": true,
+          "settling_seconds": 1.56,
+          "overshoot_rad": 0.06631249363158909,
+          "final_error_rad": -0.030085911719051176
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.0005453551464813545,
+      "constant_reconstruction_mse": 0.0549969688803557,
+      "observation_to_command_seconds_mean": 0.20071196513035794,
+      "observation_to_command_seconds_max": 0.21460129999759348,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.2993016000036732
+    },
+    "constant": {
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.9893055143542563
+        },
+        {
+          "target_rad": -0.9,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.913420229728589
+        },
+        {
+          "target_rad": 0.65,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.6345724029793216
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 12.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.2048014527210931,
+      "constant_reconstruction_mse": 0.2048014527210931,
+      "observation_to_command_seconds_mean": 0.20046316112243232,
+      "observation_to_command_seconds_max": 0.2133659999992233,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_seconds": 3.1506945000000997
+    }
+  }
+}

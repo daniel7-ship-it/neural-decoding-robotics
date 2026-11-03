@@ -1,0 +1,142 @@
+[
+  {
+    "model": "mlp-101",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "mlp-101",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "mlp-101",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "mlp-101",
+    "session": 22,
+    "identical": true
+  },
+  {
+    "model": "mlp-202",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "mlp-202",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "mlp-202",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "mlp-202",
+    "session": 22,
+    "identical": true
+  },
+  {
+    "model": "mlp-303",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "mlp-303",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "mlp-303",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "mlp-303",
+    "session": 22,
+    "identical": true
+  },
+  {
+    "model": "shuffled-label-mlp",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "shuffled-label-mlp",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "shuffled-label-mlp",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "shuffled-label-mlp",
+    "session": 22,
+    "identical": true
+  },
+  {
+    "model": "untrained-mlp",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "untrained-mlp",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "untrained-mlp",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "untrained-mlp",
+    "session": 22,
+    "identical": true
+  },
+  {
+    "model": "lda",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "lda",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "lda",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "lda",
+    "session": 22,
+    "identical": true
+  },
+  {
+    "model": "ridge",
+    "session": 19,
+    "identical": true
+  },
+  {
+    "model": "ridge",
+    "session": 20,
+    "identical": true
+  },
+  {
+    "model": "ridge",
+    "session": 21,
+    "identical": true
+  },
+  {
+    "model": "ridge",
+    "session": 22,
+    "identical": true
+  }
+]

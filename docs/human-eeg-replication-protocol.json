@@ -1,0 +1,43 @@
+{
+  "train_subjects": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "validation_subjects": [
+    7,
+    8
+  ],
+  "test_subjects": [
+    12,
+    13,
+    14
+  ],
+  "runs": [
+    4,
+    8,
+    12
+  ],
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "epochs": 25,
+  "selection": "minimum validation loss",
+  "labels": {
+    "0": "left imagery",
+    "1": "right imagery"
+  },
+  "preprocessing": "existing causal 8-30Hz, average reference, 1-3s post cue; train-only per-channel normalization",
+  "primary": "subject-held-out balanced accuracy",
+  "replay_acceptance": "all seeds >=0.70 balanced accuracy and each test subject >=0.60; binary task cannot validate rest",
+  "quality": "raw epoch nonfinite, channel peak-to-peak <0.1uV, absolute amplitude >200uV; heuristic abstention only",
+  "prior_exposure": "subject1 excluded; exploratory runs are not different days",
+  "model": "temporal Conv1d 64->16 kernel25, ReLU, average pool8, Conv1d16->16 kernel9, ReLU, global average, Linear16->2",
+  "budget": "25 epochs x3 seeds CPU; no test tuning",
+  "scientific_question": "Does the frozen pooled-subject benchmark reproduce near-chance performance on fresh subjects? No improved configuration selected.",
+  "comparison": "Fixed compact CNN versus CSP/LDA; independent replication, not an improvement claim"
+}

@@ -1,0 +1,12 @@
+test_command_expiry_and_invalid_values (test_contracts.ContractTests.test_command_expiry_and_invalid_values) ... ok
+test_decode_separate_session_and_silencing (test_contracts.ContractTests.test_decode_separate_session_and_silencing) ... ok
+test_policy_tracks_forward_and_opposite_turns (test_contracts.ContractTests.test_policy_tracks_forward_and_opposite_turns) ... ok
+test_no_signal_cannot_reconstruct_individual_trials (test_mapping.MappingTests.test_no_signal_cannot_reconstruct_individual_trials) ... ok
+test_repeatable_paired_silencing_and_fixed_anatomy (test_mapping.MappingTests.test_repeatable_paired_silencing_and_fixed_anatomy) ... ok
+test_split_guard_and_parameters (test_mapping.MappingTests.test_split_guard_and_parameters) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 3.014s
+
+OK
+Measured forward/left/right velocities: {'forward': array([0.08101187, 0.00111151, 0.05696655]), 'left': array([-7.06973030e-03, -1.13144684e-03,  1.41221125e+00]), 'right': array([ 0.00139296, -0.00930047, -1.31555687])}

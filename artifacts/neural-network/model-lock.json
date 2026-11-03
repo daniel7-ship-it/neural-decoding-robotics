@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "2826a48e0cfedf998c8e6bb5744d5b56cc6f42510afc0cdfac5d42938ff53d44",
+  "checkpoint_sha256": {
+    "mlp-101.pt": "5910a1eb44053a8f396670ae406340df81317b3f8a523f1eabc7acad496cf9f8",
+    "mlp-202.pt": "c45f52ca1e4aa8e21b7d845895b79385f3a901b625b3d73be81cc326c2800e88",
+    "mlp-303.pt": "49c46a03439bd5bdd8c248e871ef9d18f4e3391109a6d172b3f4b266c4000d68",
+    "shuffled-label-mlp.pt": "21d11326ca0a817e5bfd4dfc303cb0258e8b36921505437f7b3b67bff0745d3e",
+    "untrained-mlp.pt": "d06111e0d03ba719f7b4b098778d551cf5f1cc024b9acf8c505ec347e0788468"
+  }
+}

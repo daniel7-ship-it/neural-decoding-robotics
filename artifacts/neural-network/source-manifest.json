@@ -1,0 +1,7 @@
+{
+  "src/neuralduck/supervised.py": "b6680a759e4c4eb0d5324ca091d7aacf2c2b2046af132becb20fa07a5744948a",
+  "src/neuralduck/closed_loop.py": "a6903b8ce42329ddc04c334c38281603fc772928610a4fdd20eed7e17c6e3d9c",
+  "src/neuralduck/neural.py": "be92ab75e00aa3b52e9f9523902fd590f981fae395b77cdd38a9376ddc23acd7",
+  "docs/neural-network-protocol.json": "2826a48e0cfedf998c8e6bb5744d5b56cc6f42510afc0cdfac5d42938ff53d44",
+  "tests/test_supervised.py": "21ad86066f76ae2d9178e3d74980acd6840f1f9bee3328d9dbf7e02da6ae6841"
+}

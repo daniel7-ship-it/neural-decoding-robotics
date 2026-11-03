@@ -1,0 +1,3569 @@
+{
+  "challenge": "gain_sudden",
+  "runs": [
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 0,
+      "gain": 1.0,
+      "bias": 0.0,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.2004064744635946,
+      "observation_to_command_seconds_max": 0.21310739999462402,
+      "wall_observation_to_application_seconds_mean": 0.01152471850719404,
+      "wall_observation_to_application_seconds_max": 0.05135120000340976,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.606629000001703
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 0,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.200379903983715,
+      "observation_to_command_seconds_max": 0.20060089999897457,
+      "wall_observation_to_application_seconds_mean": 0.01173502065436017,
+      "wall_observation_to_application_seconds_max": 0.05066359999909764,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.7203042000037385
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 1,
+      "gain": 0.7,
+      "bias": 0.0,
+      "reward": 96.32861224110056,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.96,
+          "overshoot_rad": 0.009639555141383704,
+          "final_error_rad": 0.014163208511746794
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9803593601387435
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6768651902489449
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.10151119765375544,
+      "observation_to_command_seconds_mean": 0.20056214330965033,
+      "observation_to_command_seconds_max": 0.21999070000602217,
+      "wall_observation_to_application_seconds_mean": 0.01555840419216133,
+      "wall_observation_to_application_seconds_max": 0.061782500000845175,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 7.57945479999762
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 1,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.2004323783451201,
+      "observation_to_command_seconds_max": 0.21509269999951375,
+      "wall_observation_to_application_seconds_mean": 0.012236648261893657,
+      "wall_observation_to_application_seconds_max": 0.04615120000380557,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.966986500003259
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 2,
+      "gain": 1.4,
+      "bias": 0.0,
+      "reward": -4.078103304095318,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2102278241065816,
+          "final_error_rad": -0.20077604360224297
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0356473980539755
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7416798624391001
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09830547791606717,
+      "observation_to_command_seconds_mean": 0.20038391235953285,
+      "observation_to_command_seconds_max": 0.20068199999805048,
+      "wall_observation_to_application_seconds_mean": 0.011649653578795417,
+      "wall_observation_to_application_seconds_max": 0.03435480000189273,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.676762300005066
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 2,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.20043226956073193,
+      "observation_to_command_seconds_max": 0.21597619999665763,
+      "wall_observation_to_application_seconds_mean": 0.011617901533817863,
+      "wall_observation_to_application_seconds_max": 0.04471449999982724,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.666475999998511
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 3,
+      "gain": 1.0,
+      "bias": -0.15,
+      "reward": 96.56430231762366,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.22,
+          "overshoot_rad": 0.03316043326305107,
+          "final_error_rad": -0.015313841052209344
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.8071566134326744
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.5132272278914685
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.006333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.10010933148840102,
+      "observation_to_command_seconds_mean": 0.20038730674173158,
+      "observation_to_command_seconds_max": 0.20048139999853445,
+      "wall_observation_to_application_seconds_mean": 0.011721138650312655,
+      "wall_observation_to_application_seconds_max": 0.04230770000140183,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.7101339000000735
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 3,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.20038186363639035,
+      "observation_to_command_seconds_max": 0.20079839999669957,
+      "wall_observation_to_application_seconds_mean": 0.01168810613487908,
+      "wall_observation_to_application_seconds_max": 0.03971490000549238,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.700962300004903
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 4,
+      "gain": 1.0,
+      "bias": 0.15,
+      "reward": -6.53222576316328,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.28518961716855107,
+          "final_error_rad": -0.2793826632947418
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.2772169511436777
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9756261487248599
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 20,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 20,
+      "false_movement_events_per_minute_after_washout": 20.338983050847457,
+      "rest_command_fraction": 0.04566666666666667,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09987482197726,
+      "observation_to_command_seconds_mean": 0.2004334227781859,
+      "observation_to_command_seconds_max": 0.21892609999777046,
+      "wall_observation_to_application_seconds_mean": 0.011803396830350674,
+      "wall_observation_to_application_seconds_max": 0.04588270000385819,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.751035699999193
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 4,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.2004131651685587,
+      "observation_to_command_seconds_max": 0.2131074000018991,
+      "wall_observation_to_application_seconds_mean": 0.011784529447894074,
+      "wall_observation_to_application_seconds_max": 0.04176100000040606,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.7479676000002655
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 5,
+      "gain": -1.0,
+      "bias": 0.0,
+      "reward": -8.313664809060887,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1298324266899322,
+          "final_error_rad": -2.7903179605329598
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1341302055321645,
+          "final_error_rad": -2.86368591649802
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.5596609320299066
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.1253508866236723,
+      "observation_to_command_seconds_mean": 0.20043425331978454,
+      "observation_to_command_seconds_max": 0.21525250000122487,
+      "wall_observation_to_application_seconds_mean": 0.011809782412939692,
+      "wall_observation_to_application_seconds_max": 0.04768769999645883,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.766709000003175
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 5,
+      "reward": 96.09778054406638,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1400000000000001,
+          "overshoot_rad": 0.11614165381193375,
+          "final_error_rad": -0.10606211036143187
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9954374621604223
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7007198834117634
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09817808419791173,
+      "observation_to_command_seconds_mean": 0.2004019310522031,
+      "observation_to_command_seconds_max": 0.21525640000181712,
+      "wall_observation_to_application_seconds_mean": 0.01162153057260078,
+      "wall_observation_to_application_seconds_max": 0.041248800000175834,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.673819000003277
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 0,
+      "gain": 1.0,
+      "bias": 0.0,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.20068709826360862,
+      "observation_to_command_seconds_max": 0.21444770000671287,
+      "wall_observation_to_application_seconds_mean": 0.012337502760863884,
+      "wall_observation_to_application_seconds_max": 0.04436799999530194,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.026370400002634
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 0,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.2006331694584767,
+      "observation_to_command_seconds_max": 0.20074389999645062,
+      "wall_observation_to_application_seconds_mean": 0.012180719631849343,
+      "wall_observation_to_application_seconds_max": 0.04161210000165738,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.942564299999503
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 1,
+      "gain": 0.7,
+      "bias": 0.0,
+      "reward": 96.36737272507379,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.94,
+          "overshoot_rad": 0.08036004980854729,
+          "final_error_rad": -0.04990485746999074
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.888841822130174
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.5938805953260526
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": 0.05944896807765943,
+      "constant_reconstruction_mse": 0.10151124945303354,
+      "observation_to_command_seconds_mean": 0.20066495669062567,
+      "observation_to_command_seconds_max": 0.21494429999729636,
+      "wall_observation_to_application_seconds_mean": 0.012194678016243944,
+      "wall_observation_to_application_seconds_max": 0.03663589999632677,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9504100999984075
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 1,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.20066163197134362,
+      "observation_to_command_seconds_max": 0.21549330000125333,
+      "wall_observation_to_application_seconds_mean": 0.01227802995910385,
+      "wall_observation_to_application_seconds_max": 0.042552300001261756,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.982252200003131
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 2,
+      "gain": 1.4,
+      "bias": 0.0,
+      "reward": 299.40487375562816,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 10.4,
+          "overshoot_rad": 0.25248729615599674,
+          "final_error_rad": -0.19614899886810466
+        },
+        {
+          "target_rad": -1.0,
+          "success": true,
+          "settling_seconds": 3.02,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -0.12364228625553597
+        },
+        {
+          "target_rad": -0.7,
+          "success": true,
+          "settling_seconds": 0.02,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.17533495924816322
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": 0.010675199575752853,
+      "constant_reconstruction_mse": 0.04367328830901112,
+      "observation_to_command_seconds_mean": 0.200655981103188,
+      "observation_to_command_seconds_max": 0.21237090000358894,
+      "wall_observation_to_application_seconds_mean": 0.012308010224907389,
+      "wall_observation_to_application_seconds_max": 0.04318800000328338,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9972158999953535
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 2,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.20069553370790644,
+      "observation_to_command_seconds_max": 0.21763210000353883,
+      "wall_observation_to_application_seconds_mean": 0.012275106134872187,
+      "wall_observation_to_application_seconds_max": 0.04411929999332642,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.988176899998507
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 3,
+      "gain": 1.0,
+      "bias": -0.15,
+      "reward": 299.65069718565996,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.22,
+          "overshoot_rad": 0.08582481496275317,
+          "final_error_rad": -0.061658853776132894
+        },
+        {
+          "target_rad": -1.0,
+          "success": true,
+          "settling_seconds": 3.16,
+          "overshoot_rad": 0.014461015405141884,
+          "final_error_rad": -0.0013566585844082546
+        },
+        {
+          "target_rad": -0.7,
+          "success": true,
+          "settling_seconds": 0.5,
+          "overshoot_rad": 0.0,
+          "final_error_rad": 0.18628730197947999
+        }
+      ],
+      "target_success_rate": 1.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": 0.007217655202824136,
+      "constant_reconstruction_mse": 0.04633736047123341,
+      "observation_to_command_seconds_mean": 0.20068380817158987,
+      "observation_to_command_seconds_max": 0.21552919999812703,
+      "wall_observation_to_application_seconds_mean": 0.01227462096125951,
+      "wall_observation_to_application_seconds_max": 0.03680439999880036,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.98832019999827
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 3,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.20069068008175145,
+      "observation_to_command_seconds_max": 0.2171248999977251,
+      "wall_observation_to_application_seconds_mean": 0.012227529856920752,
+      "wall_observation_to_application_seconds_max": 0.04385290000209352,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9651903999983915
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 4,
+      "gain": 1.0,
+      "bias": 0.15,
+      "reward": -16.48245241040513,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2966230244773689,
+          "final_error_rad": -0.28450253085649346
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.1437748680108317
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.8541750115378044
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 122,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 119,
+      "false_movement_events_per_minute_after_washout": 121.01694915254237,
+      "rest_command_fraction": 0.6656666666666666,
+      "reconstruction_mse": 0.06443408912334787,
+      "constant_reconstruction_mse": 0.09997366123900417,
+      "observation_to_command_seconds_mean": 0.20068978784466984,
+      "observation_to_command_seconds_max": 0.21810489999479632,
+      "wall_observation_to_application_seconds_mean": 0.012346913906045871,
+      "wall_observation_to_application_seconds_max": 0.04328689999965718,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.027529899998626
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 4,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.2006600206333186,
+      "observation_to_command_seconds_max": 0.2154957999984619,
+      "wall_observation_to_application_seconds_mean": 0.01217987699384643,
+      "wall_observation_to_application_seconds_max": 0.03560510000534123,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.941737300003297
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 5,
+      "gain": -1.0,
+      "bias": 0.0,
+      "reward": -8.9667328803439,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1409454244405675,
+          "final_error_rad": -2.8948807364858657
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1406458694684694,
+          "final_error_rad": -2.8776280562008285
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1414342352782625,
+          "final_error_rad": -3.0942240876572065
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.05409970135127924,
+      "constant_reconstruction_mse": 0.09920867951466593,
+      "observation_to_command_seconds_mean": 0.20066286516844992,
+      "observation_to_command_seconds_max": 0.21605879999988264,
+      "wall_observation_to_application_seconds_mean": 0.01223431830280295,
+      "wall_observation_to_application_seconds_max": 0.04299320000427542,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.965394800005015
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 5,
+      "reward": -3.9786815824376984,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2152839385164651,
+          "final_error_rad": -0.2054350772124838
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9783247149669771
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6949217902582372
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06201024048936193,
+      "constant_reconstruction_mse": 0.09836331286331065,
+      "observation_to_command_seconds_mean": 0.20067167875366645,
+      "observation_to_command_seconds_max": 0.21444400000036623,
+      "wall_observation_to_application_seconds_mean": 0.01222865807769587,
+      "wall_observation_to_application_seconds_max": 0.04487039999366971,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.965390400000615
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 0,
+      "gain": 1.0,
+      "bias": 0.0,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.2006673430028766,
+      "observation_to_command_seconds_max": 0.2160171000025004,
+      "wall_observation_to_application_seconds_mean": 0.01235736196328053,
+      "wall_observation_to_application_seconds_max": 0.045901699995738454,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.0329214999947
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 0,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.20067257752808823,
+      "observation_to_command_seconds_max": 0.21449490000231886,
+      "wall_observation_to_application_seconds_mean": 0.012321345398840205,
+      "wall_observation_to_application_seconds_max": 0.06846629999927245,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.002572799996415
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 1,
+      "gain": 0.7,
+      "bias": 0.0,
+      "reward": 96.33637080236812,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.84,
+          "overshoot_rad": 0.021431887348309028,
+          "final_error_rad": 0.02446892851298177
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9701902013409671
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6689700677779258
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.058300560504833294,
+      "constant_reconstruction_mse": 0.10128455874746356,
+      "observation_to_command_seconds_mean": 0.20068154208365802,
+      "observation_to_command_seconds_max": 0.21542390000395262,
+      "wall_observation_to_application_seconds_mean": 0.012243332821950623,
+      "wall_observation_to_application_seconds_max": 0.04512350000004517,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.97276779999811
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 1,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.20065979601636155,
+      "observation_to_command_seconds_max": 0.21505699999688654,
+      "wall_observation_to_application_seconds_mean": 0.01215868261769079,
+      "wall_observation_to_application_seconds_max": 0.05134569999790983,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.931974099999934
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 2,
+      "gain": 1.4,
+      "bias": 0.0,
+      "reward": -4.164817063308967,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.22543847905282585,
+          "final_error_rad": -0.19982507275907557
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0805245884137626
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7844674021361293
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.06070978139129202,
+      "constant_reconstruction_mse": 0.09805477050608528,
+      "observation_to_command_seconds_mean": 0.20069192870279537,
+      "observation_to_command_seconds_max": 0.21808829999936274,
+      "wall_observation_to_application_seconds_mean": 0.012333841308887575,
+      "wall_observation_to_application_seconds_max": 0.04352600000129314,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.013634099996125
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 2,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.200659782124641,
+      "observation_to_command_seconds_max": 0.21444929999706774,
+      "wall_observation_to_application_seconds_mean": 0.012119158895759534,
+      "wall_observation_to_application_seconds_max": 0.030331399997521657,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.912902099997154
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 3,
+      "gain": 1.0,
+      "bias": -0.15,
+      "reward": 96.51423791017226,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.22,
+          "overshoot_rad": 0.03106041587692809,
+          "final_error_rad": -0.008684214706069726
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.8398801029323635
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.5371977721893213
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.058231861595077546,
+      "constant_reconstruction_mse": 0.10010524445481708,
+      "observation_to_command_seconds_mean": 0.20069103401434035,
+      "observation_to_command_seconds_max": 0.21760449999710563,
+      "wall_observation_to_application_seconds_mean": 0.012313789672739989,
+      "wall_observation_to_application_seconds_max": 0.04523049999988871,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.006699899997329
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 3,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.2006348011236024,
+      "observation_to_command_seconds_max": 0.20074419999873783,
+      "wall_observation_to_application_seconds_mean": 0.012204409611383063,
+      "wall_observation_to_application_seconds_max": 0.044244199998502154,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9538701999990735
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 4,
+      "gain": 1.0,
+      "bias": 0.15,
+      "reward": -12.135674855996356,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.23758169799660078,
+          "final_error_rad": -0.21265093492894405
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.2119424125791634
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9110815084882473
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 78,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 78,
+      "false_movement_events_per_minute_after_washout": 79.32203389830508,
+      "rest_command_fraction": 0.32233333333333336,
+      "reconstruction_mse": 0.06108352917520202,
+      "constant_reconstruction_mse": 0.09835706127719787,
+      "observation_to_command_seconds_mean": 0.20065737293151745,
+      "observation_to_command_seconds_max": 0.2097461999976069,
+      "wall_observation_to_application_seconds_mean": 0.012472083333176873,
+      "wall_observation_to_application_seconds_max": 0.04219839999859687,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.084891400001652
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 4,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.20067043564857134,
+      "observation_to_command_seconds_max": 0.21550780000252434,
+      "wall_observation_to_application_seconds_mean": 0.012194698568398884,
+      "wall_observation_to_application_seconds_max": 0.045654699999431614,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.949315099998785
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 5,
+      "gain": -1.0,
+      "bias": 0.0,
+      "reward": -7.871549977593447,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1392496732584108,
+          "final_error_rad": -2.671872317503476
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1326709914145887,
+          "final_error_rad": -2.7501353632928724
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.4495422967970986
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.07892807657311632,
+      "constant_reconstruction_mse": 0.1253556141178266,
+      "observation_to_command_seconds_mean": 0.2006421894790504,
+      "observation_to_command_seconds_max": 0.20074989999848183,
+      "wall_observation_to_application_seconds_mean": 0.01226703435579431,
+      "wall_observation_to_application_seconds_max": 0.04336879999755183,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9786564000023645
+    },
+    {
+      "seed": 42,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 5,
+      "reward": 96.04069891208898,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.12486068948563478,
+          "final_error_rad": -0.08902976567849108
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.085336457504984
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.784934864727541
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05825595678219303,
+      "constant_reconstruction_mse": 0.09949210065053977,
+      "observation_to_command_seconds_mean": 0.20067701675174285,
+      "observation_to_command_seconds_max": 0.2149672999978065,
+      "wall_observation_to_application_seconds_mean": 0.012189643660574297,
+      "wall_observation_to_application_seconds_max": 0.043203699999139644,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.951309299998684
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 0,
+      "gain": 1.0,
+      "bias": 0.0,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.20039232063327936,
+      "observation_to_command_seconds_max": 0.2130980000030831,
+      "wall_observation_to_application_seconds_mean": 0.01147393762783019,
+      "wall_observation_to_application_seconds_max": 0.04540669999551028,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.597777800001495
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 0,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.20039030224729046,
+      "observation_to_command_seconds_max": 0.21576489999570203,
+      "wall_observation_to_application_seconds_mean": 0.011510331492773676,
+      "wall_observation_to_application_seconds_max": 0.04154019999987213,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.616402999999991
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 1,
+      "gain": 0.7,
+      "bias": 0.0,
+      "reward": 96.36410221200504,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.68,
+          "overshoot_rad": 0.010154735570114815,
+          "final_error_rad": 0.055907798762392054
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.941305056803337
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.638684932429228
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.10163345747724165,
+      "observation_to_command_seconds_mean": 0.20038097773232008,
+      "observation_to_command_seconds_max": 0.20048349999997297,
+      "wall_observation_to_application_seconds_mean": 0.011576327914142946,
+      "wall_observation_to_application_seconds_max": 0.043150199999217875,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.647369299993443
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 1,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.2004133966292785,
+      "observation_to_command_seconds_max": 0.21417650000075827,
+      "wall_observation_to_application_seconds_mean": 0.011581165848715528,
+      "wall_observation_to_application_seconds_max": 0.04518139999709092,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.6486743000059505
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 2,
+      "gain": 1.4,
+      "bias": 0.0,
+      "reward": -4.1348132563069875,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.237549072752393,
+          "final_error_rad": -0.2074024919236166
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.061278419734494
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.766132344648877
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.09886523691383493,
+      "observation_to_command_seconds_mean": 0.20045581961185815,
+      "observation_to_command_seconds_max": 0.2162541000026974,
+      "wall_observation_to_application_seconds_mean": 0.01165607607354495,
+      "wall_observation_to_application_seconds_max": 0.04362579999724403,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.685330899999826
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 2,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.20038519959137857,
+      "observation_to_command_seconds_max": 0.2146673999988704,
+      "wall_observation_to_application_seconds_mean": 0.01157140071578631,
+      "wall_observation_to_application_seconds_max": 0.041379000002052635,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.6448887000005925
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 3,
+      "gain": 1.0,
+      "bias": -0.15,
+      "reward": 96.4897120255386,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.22,
+          "overshoot_rad": 0.048911408720739846,
+          "final_error_rad": -0.026572583131015733
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.8418236842241413
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.5418917071062532
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.10077338619856928,
+      "observation_to_command_seconds_mean": 0.2004139411643692,
+      "observation_to_command_seconds_max": 0.21580729999841441,
+      "wall_observation_to_application_seconds_mean": 0.011674109509144886,
+      "wall_observation_to_application_seconds_max": 0.04012230000080308,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.697244999995746
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 3,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.2003735431052078,
+      "observation_to_command_seconds_max": 0.20049149999540816,
+      "wall_observation_to_application_seconds_mean": 0.01167099222910367,
+      "wall_observation_to_application_seconds_max": 0.04468120000092313,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.696046400000341
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 4,
+      "gain": 1.0,
+      "bias": 0.15,
+      "reward": -13.675030223625356,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.2530940150893204,
+          "final_error_rad": -0.22552612195861352
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.224763583742956
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9247405179237849
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 93,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 92,
+      "false_movement_events_per_minute_after_washout": 93.55932203389831,
+      "rest_command_fraction": 0.318,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0992596895685772,
+      "observation_to_command_seconds_mean": 0.20042287640461526,
+      "observation_to_command_seconds_max": 0.21578460000018795,
+      "wall_observation_to_application_seconds_mean": 0.01170927893671189,
+      "wall_observation_to_application_seconds_max": 0.04401279999729013,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.704823799998849
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 4,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.20041096976488285,
+      "observation_to_command_seconds_max": 0.21524260000587603,
+      "wall_observation_to_application_seconds_mean": 0.011574034560268523,
+      "wall_observation_to_application_seconds_max": 0.029671199998119846,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.639355399995111
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "online_candidate",
+      "candidate": 5,
+      "gain": -1.0,
+      "bias": 0.0,
+      "reward": -8.08129269021576,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.139036746003669,
+          "final_error_rad": -2.767402351550368
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.118012564170881,
+          "final_error_rad": -2.764676585832378
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.449213752833014
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.1264270335555895,
+      "observation_to_command_seconds_mean": 0.20042191848813315,
+      "observation_to_command_seconds_max": 0.2167980000042009,
+      "wall_observation_to_application_seconds_mean": 0.01176153742335094,
+      "wall_observation_to_application_seconds_max": 0.04496840000501834,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.736985499999719
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "direct",
+      "mode": "equal_budget_frozen",
+      "candidate": 5,
+      "reward": 96.05961274572529,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.14777780856877687,
+          "final_error_rad": -0.11050884621298353
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.017194248437352
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7126841596243807
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": null,
+      "constant_reconstruction_mse": 0.0986332404436137,
+      "observation_to_command_seconds_mean": 0.20040254228804105,
+      "observation_to_command_seconds_max": 0.2173899000001256,
+      "wall_observation_to_application_seconds_mean": 0.011569448466103116,
+      "wall_observation_to_application_seconds_max": 0.03583420000359183,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.640345500003605
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 0,
+      "gain": 1.0,
+      "bias": 0.0,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.200671172625242,
+      "observation_to_command_seconds_max": 0.21335020000260485,
+      "wall_observation_to_application_seconds_mean": 0.012294015439752401,
+      "wall_observation_to_application_seconds_max": 0.03914709999662591,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.995287500001723
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 0,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.20068127456593063,
+      "observation_to_command_seconds_max": 0.21650359999621294,
+      "wall_observation_to_application_seconds_mean": 0.012310231595136703,
+      "wall_observation_to_application_seconds_max": 0.04401250000228174,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.005603499994322
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 1,
+      "gain": 0.7,
+      "bias": 0.0,
+      "reward": 96.33059264294891,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.7,
+          "overshoot_rad": 0.019067506683187574,
+          "final_error_rad": 0.01951981997593388
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9755173885830641
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6743701484920814
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05854917047099378,
+      "constant_reconstruction_mse": 0.10169415964026703,
+      "observation_to_command_seconds_mean": 0.20065739254334466,
+      "observation_to_command_seconds_max": 0.21548590000311374,
+      "wall_observation_to_application_seconds_mean": 0.012259074233130482,
+      "wall_observation_to_application_seconds_max": 0.03820660000201315,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9868271999948774
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 1,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.20067501399383458,
+      "observation_to_command_seconds_max": 0.21443109999672716,
+      "wall_observation_to_application_seconds_mean": 0.012303221983659704,
+      "wall_observation_to_application_seconds_max": 0.04350870000052964,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.0044388999958755
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 2,
+      "gain": 1.4,
+      "bias": 0.0,
+      "reward": 95.87032321315922,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 2.62,
+          "overshoot_rad": 0.22969037171535886,
+          "final_error_rad": -0.1933011035615475
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.065724880168702
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7706508031105306
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.060939730236494107,
+      "constant_reconstruction_mse": 0.09870234935822103,
+      "observation_to_command_seconds_mean": 0.20071553125629532,
+      "observation_to_command_seconds_max": 0.22018790000147415,
+      "wall_observation_to_application_seconds_mean": 0.012439103680811603,
+      "wall_observation_to_application_seconds_max": 0.03628829999797745,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.069013599997561
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 2,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.2007032038813262,
+      "observation_to_command_seconds_max": 0.221943100000499,
+      "wall_observation_to_application_seconds_mean": 0.012333347546133407,
+      "wall_observation_to_application_seconds_max": 0.043406699995102827,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.011719499998435
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 3,
+      "gain": 1.0,
+      "bias": -0.15,
+      "reward": 96.50038600485959,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.22,
+          "overshoot_rad": 0.04035760059832772,
+          "final_error_rad": -0.016999429946300104
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.840435760237376
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.5421788049567335
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.05850953109868436,
+      "constant_reconstruction_mse": 0.10077339234422893,
+      "observation_to_command_seconds_mean": 0.20067666843733034,
+      "observation_to_command_seconds_max": 0.21705650000076293,
+      "wall_observation_to_application_seconds_mean": 0.01232484284248878,
+      "wall_observation_to_application_seconds_max": 0.042376099998364225,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.002977199997986
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 3,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.2006704332993066,
+      "observation_to_command_seconds_max": 0.21453800000308554,
+      "wall_observation_to_application_seconds_mean": 0.012378656850719873,
+      "wall_observation_to_application_seconds_max": 0.047168200006126426,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.039042000003974
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 4,
+      "gain": 1.0,
+      "bias": 0.15,
+      "reward": -14.992893128755046,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.25702218467573656,
+          "final_error_rad": -0.23330281432325983
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.229459619909049
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9301306945227357
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 106,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 105,
+      "false_movement_events_per_minute_after_washout": 106.77966101694915,
+      "rest_command_fraction": 0.444,
+      "reconstruction_mse": 0.06201345403519299,
+      "constant_reconstruction_mse": 0.09936242215689926,
+      "observation_to_command_seconds_mean": 0.2007095460674375,
+      "observation_to_command_seconds_max": 0.21869839999562823,
+      "wall_observation_to_application_seconds_mean": 0.01236707975466332,
+      "wall_observation_to_application_seconds_max": 0.05387899999914225,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.033965500006161
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 4,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.2006813208377361,
+      "observation_to_command_seconds_max": 0.21968490000581342,
+      "wall_observation_to_application_seconds_mean": 0.012287321574638401,
+      "wall_observation_to_application_seconds_max": 0.04427659999782918,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.986470700001519
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "online_candidate",
+      "candidate": 5,
+      "gain": -1.0,
+      "bias": 0.0,
+      "reward": -7.81903650497576,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.12007923099237,
+          "final_error_rad": -2.6853508489678988
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.132717466525455,
+          "final_error_rad": -2.718311138656398
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.415374517351464
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.07921822528591842,
+      "constant_reconstruction_mse": 0.12641602535372692,
+      "observation_to_command_seconds_mean": 0.20067936026545105,
+      "observation_to_command_seconds_max": 0.2144370999987586,
+      "wall_observation_to_application_seconds_mean": 0.01224134693247257,
+      "wall_observation_to_application_seconds_max": 0.04186900000058813,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.971794100005354
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "neurons",
+      "mode": "equal_budget_frozen",
+      "candidate": 5,
+      "reward": 96.03440629614269,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.08,
+          "overshoot_rad": 0.13050065655168508,
+          "final_error_rad": -0.09370250748507214
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0873738060980687
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.7845173902741651
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.05856323516412103,
+      "constant_reconstruction_mse": 0.10008117234412187,
+      "observation_to_command_seconds_mean": 0.20068493278877061,
+      "observation_to_command_seconds_max": 0.21610730000538725,
+      "wall_observation_to_application_seconds_mean": 0.012235788957037651,
+      "wall_observation_to_application_seconds_max": 0.03409010000177659,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.961571799998637
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 0,
+      "gain": 1.0,
+      "bias": 0.0,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20069089928519537,
+      "observation_to_command_seconds_max": 0.21553570000396582,
+      "wall_observation_to_application_seconds_mean": 0.012366503680934966,
+      "wall_observation_to_application_seconds_max": 0.045090799998433795,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.034375200004433
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 0,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20068965127697436,
+      "observation_to_command_seconds_max": 0.2155277000012572,
+      "wall_observation_to_application_seconds_mean": 0.012288858282225895,
+      "wall_observation_to_application_seconds_max": 0.043561600003158674,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9950211999967
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 1,
+      "gain": 0.7,
+      "bias": 0.0,
+      "reward": 96.32739981431374,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.96,
+          "overshoot_rad": 0.01258090796644451,
+          "final_error_rad": 0.014263446628570264
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9800988990708976
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.678237839986802
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 0,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0,
+      "reconstruction_mse": 0.06238101162819156,
+      "constant_reconstruction_mse": 0.10215130711806186,
+      "observation_to_command_seconds_mean": 0.20064103095013994,
+      "observation_to_command_seconds_max": 0.20076500000432418,
+      "wall_observation_to_application_seconds_mean": 0.012253814008018952,
+      "wall_observation_to_application_seconds_max": 0.044541399998706765,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.981311300005473
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 1,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20067690061287025,
+      "observation_to_command_seconds_max": 0.2155012000032004,
+      "wall_observation_to_application_seconds_mean": 0.012206799181948124,
+      "wall_observation_to_application_seconds_max": 0.05172839999431744,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.955310299999837
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 2,
+      "gain": 1.4,
+      "bias": 0.0,
+      "reward": 95.93635634047013,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 2.32,
+          "overshoot_rad": 0.22918543778888467,
+          "final_error_rad": -0.19123036750314212
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.0369166918886132
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.73549660013812
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.003,
+      "reconstruction_mse": 0.06481711014094027,
+      "constant_reconstruction_mse": 0.0986798388735914,
+      "observation_to_command_seconds_mean": 0.20066816271708482,
+      "observation_to_command_seconds_max": 0.21653510000323872,
+      "wall_observation_to_application_seconds_mean": 0.012372858793613885,
+      "wall_observation_to_application_seconds_max": 0.03425009999773465,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.031495900002483
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 2,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20070316537281888,
+      "observation_to_command_seconds_max": 0.216622199997073,
+      "wall_observation_to_application_seconds_mean": 0.012226438241421434,
+      "wall_observation_to_application_seconds_max": 0.04364289999648463,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.96473660000629
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 3,
+      "gain": 1.0,
+      "bias": -0.15,
+      "reward": 96.54911400901007,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.22,
+          "overshoot_rad": 0.039003803345991406,
+          "final_error_rad": -0.011561424372924957
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.8193035762403298
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.5200209903766786
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.004666666666666667,
+      "reconstruction_mse": 0.06230154530335764,
+      "constant_reconstruction_mse": 0.1007733782068462,
+      "observation_to_command_seconds_mean": 0.20067893993884223,
+      "observation_to_command_seconds_max": 0.21492769999458683,
+      "wall_observation_to_application_seconds_mean": 0.012309166359908773,
+      "wall_observation_to_application_seconds_max": 0.04484579999552807,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9975512999953935
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 3,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20067392982634805,
+      "observation_to_command_seconds_max": 0.215003499996965,
+      "wall_observation_to_application_seconds_mean": 0.012272410838507523,
+      "wall_observation_to_application_seconds_max": 0.042044200003147125,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.984661099995719
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 4,
+      "gain": 1.0,
+      "bias": 0.15,
+      "reward": -6.332734483773184,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.26763040718349074,
+          "final_error_rad": -0.24444341017041957
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.2442010821780065
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.944089991424757
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 19,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 19,
+      "false_movement_events_per_minute_after_washout": 19.322033898305083,
+      "rest_command_fraction": 0.04133333333333333,
+      "reconstruction_mse": 0.06631851888261334,
+      "constant_reconstruction_mse": 0.09964094789664327,
+      "observation_to_command_seconds_mean": 0.20067469775274252,
+      "observation_to_command_seconds_max": 0.21498610000271556,
+      "wall_observation_to_application_seconds_mean": 0.012412712474390275,
+      "wall_observation_to_application_seconds_max": 0.051141200005076826,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.056018600000243
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 4,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20068875781409828,
+      "observation_to_command_seconds_max": 0.21922159999958235,
+      "wall_observation_to_application_seconds_mean": 0.012202368098124123,
+      "wall_observation_to_application_seconds_max": 0.045712499995715916,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.95488170000317
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "online_candidate",
+      "candidate": 5,
+      "gain": -1.0,
+      "bias": 0.0,
+      "reward": -8.102414814645813,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1258976406892676,
+          "final_error_rad": -2.741371093583481
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 3.1303315444538753,
+          "final_error_rad": -2.7856367808709432
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -2.4754069401913887
+        }
+      ],
+      "target_success_rate": 0.0,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.08426641604418476,
+      "constant_reconstruction_mse": 0.12641565483342013,
+      "observation_to_command_seconds_mean": 0.2006919720123125,
+      "observation_to_command_seconds_max": 0.21679669999430207,
+      "wall_observation_to_application_seconds_mean": 0.012502228118678516,
+      "wall_observation_to_application_seconds_max": 0.04459079999651294,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 6.091469399994821
+    },
+    {
+      "seed": 1337,
+      "session": 7,
+      "condition": "gain_sudden",
+      "path": "populations",
+      "mode": "equal_budget_frozen",
+      "candidate": 5,
+      "reward": 96.20682524747477,
+      "tasks": [
+        {
+          "target_rad": 1.0,
+          "success": true,
+          "settling_seconds": 1.1,
+          "overshoot_rad": 0.11785152010760047,
+          "final_error_rad": -0.06410619086225378
+        },
+        {
+          "target_rad": -1.0,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.9656174770258679
+        },
+        {
+          "target_rad": -0.7,
+          "success": false,
+          "settling_seconds": null,
+          "overshoot_rad": 0.0,
+          "final_error_rad": -1.6634510846371229
+        }
+      ],
+      "target_success_rate": 0.3333333333333333,
+      "falls": 0,
+      "false_movement_events": 1,
+      "rest_seconds": 60.0,
+      "false_movement_events_after_1s_washout": 0,
+      "false_movement_events_per_minute_after_washout": 0.0,
+      "rest_command_fraction": 0.0013333333333333333,
+      "reconstruction_mse": 0.062283433354331535,
+      "constant_reconstruction_mse": 0.10025635448983694,
+      "observation_to_command_seconds_mean": 0.20069535566919974,
+      "observation_to_command_seconds_max": 0.2197227000026032,
+      "wall_observation_to_application_seconds_mean": 0.012189056339554605,
+      "wall_observation_to_application_seconds_max": 0.046365300004254095,
+      "latency_definition": "200ms simulated sample acquisition + measured decoder/gate compute; GUI scheduling excluded",
+      "wall_latency_definition": "Actual elapsed wall time from oldest recorded sample to command application, including scheduling; accelerated batch wall time is not biological real time",
+      "wall_seconds": 5.9385404999993625
+    }
+  ],
+  "selected_so_far": {
+    "42": {
+      "direct": {
+        "candidate": 3,
+        "gain": 1.0,
+        "bias": -0.15,
+        "adaptation_reward": 96.56430231762366
+      },
+      "neurons": {
+        "candidate": 3,
+        "gain": 1.0,
+        "bias": -0.15,
+        "adaptation_reward": 299.65069718565996
+      },
+      "populations": {
+        "candidate": 3,
+        "gain": 1.0,
+        "bias": -0.15,
+        "adaptation_reward": 96.51423791017226
+      }
+    },
+    "1337": {
+      "direct": {
+        "candidate": 3,
+        "gain": 1.0,
+        "bias": -0.15,
+        "adaptation_reward": 96.4897120255386
+      },
+      "neurons": {
+        "candidate": 3,
+        "gain": 1.0,
+        "bias": -0.15,
+        "adaptation_reward": 96.50038600485959
+      }
+    }
+  }
+}
