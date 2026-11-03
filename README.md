@@ -67,6 +67,4 @@ Raw PhysioNet EDF recordings and preprocessing caches are excluded. Source-recor
 
 The synthetic electrode model mixes simulated neural activity and noise; it does not solve a physical scalp-voltage or tissue-conductivity model. Synthetic accuracy cannot be extrapolated to human EEG. Participants 1–22 have already been inspected, so future confirmation needs a locked evaluation protocol. Human rest detection, live EEG-to-robot control, whole-brain emulation, and clinical use remain unestablished. Some historical reports link to local logs or UI screenshots excluded from this publication.
 
-## Attribution and publication scope
 
-See [provenance and licenses](PROVENANCE.md) and [publication notes](PUBLICATION.md). This is an independent research integration, with no claimed affiliation or endorsement by Pollen Robotics or Eon Systems.
