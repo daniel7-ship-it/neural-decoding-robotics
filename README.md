@@ -1,10 +1,10 @@
 # Neural Decoding for Embodied Robotics
 
-I built a decoder that turns simulated neural signals into rest, left, and right commands, then connected it to Pollen Robotics’ existing Microduck simulation. In a separate experiment, I compared decoders on prerecorded human EEG from PhysioNet.
+For this personal project, I built a decoder that turns simulated neural signals into rest, left, and right commands, then connected it to Pollen Robotics’ existing Microduck simulation. In a separate experiment, I compared decoders on prerecorded human EEG from PhysioNet.
 
 **Status:** synthetic signal-to-robot simulation is implemented; recorded human EEG analysis is exploratory. Reliable live human brain control has not been demonstrated.
 
-## Research contributions
+## What I built and tested
 
 - Simulate 96 neural units observed through 24 virtual electrode channels; decode rest, left, and right intentions.
 - Connect decoded commands to the upstream Microduck locomotion policy in MuJoCo, with confidence gating, command expiry, and replay timing checks.
