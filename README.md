@@ -1,6 +1,6 @@
 # Neural Decoding for Embodied Robotics
 
-Research integrating neural-signal decoding with **Pollen Robotics’ Microduck** simulation. This repository contains synthetic neural circuits, statistical and neural-network decoders, a Windows-compatible robot simulation adapter, recorded human EEG benchmarks, and experiments on control reliability.
+I built a decoder that turns simulated neural signals into rest, left, and right commands, then connected it to Pollen Robotics’ existing Microduck simulation. In a separate experiment, I compared decoders on prerecorded human EEG from PhysioNet.
 
 **Status:** synthetic signal-to-robot simulation is implemented; recorded human EEG analysis is exploratory. Reliable live human brain control has not been demonstrated.
 
